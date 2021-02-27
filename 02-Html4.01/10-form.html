@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+            <meta content="width=device-width, initial-scale=1.0" name="viewport">
+                <title>
+                    Formularios
+                </title>
+            </meta>
+        </meta>
+    </head>
+    <body>
+        <form>
+            <form action="url">
+                <!-- Indica la url que se encarga de procesar los datos del formulario -->
+            </form>
+            <form method="post" or="Get">
+                <!-- metodo http empleado al enviar el formulario -->
+            </form>
+            <form enctype="application/-www-form-urlencoded o multiport/form-data">
+                <!-- tipo de codificacion empleada al enviar el formulario al servidor (solo se indica de forma explicita en los formularios que permiten adjuntar archivos) -->
+            </form>
+            <form accept="tpo_de_contenido">
+                <!-- lista separada por comas de todos los tipos de archivos aceptados por el servidor (solo para los formularios que permiten adjuntar archivos) -->
+            </form>
+            <form>
+                <!-- otros: accept-charset. onsubmit, onreset -->
+            </form>
+        </form>
+        <fieldset>
+            <!-- agrupacion de campos -->
+        </fieldset>
+        <legend>
+            <!-- titulo o leyenda de un fieldset-->
+        </legend>
+        <label for="id_de_elemento">
+            <!-- indica el id del campo del formulario para el que este elemento es su titulo; otros: acceskey, onfocus y onblur -->
+        </label>
+        <textarea>
+            <textarea rows="numero">
+                <!-- numero de flas de texto que mostrara al textarea -->
+            </textarea>
+            <textarea cols="numero">
+                <!-- numero de caracteres que se muestran en cada fila del textarea-->
+            </textarea>
+            <textarea>
+                <!-- Otros: naname, disabled, readonly, onselect, onchange, onfocus, onblur-->
+            </textarea>
+        </textarea>
+        <select>
+            <select size="numero">
+                <!-- numero de filas que se muestran de la lista (por defecto solo se muestra una)-->
+            </select>
+            <select multiple="multiple">
+                <!-- si se incluye, se permite seleciionar mas de un elemento -->
+            </select>
+            <select>
+                <!-- Otros: name, disabled, onchange, onfocus, onblur-->
+            </select>
+        </select>
+        <option>
+            <option selected="selected">
+                <!-- indica si el elemento aparece seleccionado por defecto al cargarse la pagina-->
+            </option>
+            <option value="texto">
+                <!--el valor que se envia al servidor cuando el usuario elige esa opción -->
+            </option>
+            <option>
+                <!--Otros: label, disabled -->
+            </option>
+        </option>
+        <input>
+            <input type="text | password | chechbox | radio | submit | reset | file | hidden | inoge| Button">
+                <!--indica el tipo de control que se incluye en el formulario -->
+                <input name="text">
+                    <!-- Asigna un nombre al control ( es imprescindible para que el servidor pueda procesar el formulario) -->
+                    <input value="text">
+                        <!-- valor inicial del control -->
+                        <input size="unidad_de_medidat">
+                            <!-- tamaño inicial del control (para los campos de texto y de password se refiere al numero de caracteres, en el resto de controles se refiere a su tamaño en pixel) -->
+                            <input maxlength="numero">
+                                <!-- maximo numero de caracteres para los controles de texto y de password -->
+                                <input checked="checked">
+                                    <!-- para los controles checkbos y radiobutton permite indicar que opcion aparece presellecionada-->
+                                    <input disabled="disabled">
+                                        <!--el control aparece deshabilitado y su valor no se envia al servidor junto con el resto de datos -->
+                                        <input readonly="readonly">
+                                            <!-- El contenido del control no se puede modificar -->
+                                            <input src="url">
+                                                <!-- para el control que permite crear botones con imagenes, indica la url de la imagen que se emplea como boton de formulario-->
+                                                <input alt="text">
+                                                    <!-- descripcion del control -->
+                                                </input>
+                                            </input>
+                                        </input>
+                                    </input>
+                                </input>
+                            </input>
+                        </input>
+                    </input>
+                </input>
+            </input>
+        </input>
+    </body>
+</html>
