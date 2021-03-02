@@ -10,14 +10,20 @@
         </meta>
     </head>
     <body>
-        <h1>
-            Script Js
+        <h1 id="username">
         </h1>
-        <br>
-            <xmp>
-                <script type="text/javascript">
-                </script>
-            </xmp>
-        </br>
+        <!--Camellcase = userName, fullName, firstName, colorMainNavbar; 
+        pascalcase = UserName, Fullname, FirstName, ColorMainNavbar;
+        snakecase  = user_name, full_name, first_name, color_main_navbar;
+        lowercase  = username, fullname, firstname, colormainnavbar;
+        uppercase  = USERNAME, FULLNAME, FIRSTNAME, COLORMAINNAVBAR;-->
+        <script>
+            var username = document.getElementById('username');
+            var question = prompt('cual es tu nombre de usuario?');
+            if (question)
+                username.innerHTML = 'Welcome: ' + question;
+           else 
+            username.innerHTML = 'Welcome: Guess';
+        </script>
     </body>
 </html>
