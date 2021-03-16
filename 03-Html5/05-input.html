@@ -1,26 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>input</title>
-</head>
-<body>
-    <form action="" method="POST">
-        <h3>Type color</h3>
-        <input type="color" oninput="hex.value=this.value" required>
-        <output id="hex"></output>
-        <!--  -->
-        <h3>Type Date</h3>
-        <input type="date" required>
-        <!--  -->
-        <h3>Type Email</h3>
-        <input type="email" required>
-        <br>
-        <button>Send Form</button>
-
-    </form>
-    
-</body>
+    <head>
+        <meta charset="utf-8">
+            <meta content="IE=edge" http-equiv="X-UA-Compatible">
+                <meta content="width=device-width, initial-scale=1.0" name="viewport">
+                    <title>
+                        input
+                    </title>
+                </meta>
+            </meta>
+        </meta>
+    </head>
+    <body>
+        <form action="" method="POST">
+            <h3>
+                Type color
+            </h3>
+            <input oninput="hex.value=this.value" required="" type="color">
+                <output id="hex">
+                </output>
+                <!-- -->
+                <h3>
+                    Type Date
+                </h3>
+                <input required="" type="date">
+                    <!-- -->
+                    <h3>
+                        Type Email
+                    </h3>
+                    <input placeholder="email" required="" type="email">
+                        <br>
+                            <h3>
+                                Type Number (1-100)
+                            </h3>
+                            <input max="100" min="1" type="number">
+                                <br>
+                                    <h3>
+                                        Type Range
+                                    </h3>
+                                    <input oninput="per.value=this.value+'%'" type="range">
+                                        <output id="per">
+                                        </output>
+                                        <br>
+                                            <br>
+                                                <button>
+                                                    Send Form
+                                                </button>
+                                            </br>
+                                        </br>
+                                    </input>
+                                </br>
+                            </input>
+                        </br>
+                    </input>
+                </input>
+            </input>
+        </form>
+    </body>
 </html>

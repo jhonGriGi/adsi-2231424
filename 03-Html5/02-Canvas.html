@@ -1,27 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Canvas</title>
-</head>
-<body>
-  <h2>Square</h2> 
-  <canvas id="square"></canvas>
-  <h2>rectangle</h2> 
-  <canvas id="rectangle"></canvas>
-  <h2>triangle</h2> 
-  <canvas id="triangle"></canvas>
-  <h2>circle</h2> 
-  <canvas id="circle"></canvas>
-  <h2>Heart</h2> 
-  <canvas id="heart"></canvas>
-  <h2>Text</h2> 
-  <canvas id="text"></canvas>
-  
-  <script>
-    // square ----------------
+    <head>
+        <meta charset="utf-8">
+            <meta content="IE=edge" http-equiv="X-UA-Compatible">
+                <meta content="width=device-width, initial-scale=1.0" name="viewport">
+                    <title>
+                        Canvas
+                    </title>
+                </meta>
+            </meta>
+        </meta>
+    </head>
+    <body>
+        <h2>
+            Square
+        </h2>
+        <canvas id="square">
+        </canvas>
+        <h2>
+            rectangle
+        </h2>
+        <canvas id="rectangle">
+        </canvas>
+        <h2>
+            triangle
+        </h2>
+        <canvas id="triangle">
+        </canvas>
+        <h2>
+            circle
+        </h2>
+        <canvas id="circle">
+        </canvas>
+        <h2>
+            Heart
+        </h2>
+        <canvas id="heart">
+        </canvas>
+        <h2>
+            Text
+        </h2>
+        <canvas id="text">
+        </canvas>
+        <script>
+            // square ----------------
     var canvas = document.getElementById('square');
     var contxt = canvas.getContext('2d');
     contxt.fillStyle = '#53aa88';
@@ -72,8 +94,6 @@
        contxt.fillStyle = '#53aa88';
        contxt.font = '60px Tahoma';
        contxt.fillText('ADSI', 20, 80);
-
-  </script>
-
-</body>
+        </script>
+    </body>
 </html>
