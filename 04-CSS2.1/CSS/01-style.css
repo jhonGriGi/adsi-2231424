@@ -1,0 +1,16 @@
+body {
+    background-color: #630000;
+}
+article {
+    font-family: tahoma;
+    width: 480px;
+    margin: 100px auto;
+    background-color: #810000;
+    padding: 20px;
+}
+article h1 {
+    text-align: center;
+}
+article p {
+    text-justify: justify;
+}
