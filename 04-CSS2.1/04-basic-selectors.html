@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic selectors</title>
+    <style>
+        *{
+            border: 1px dotted coral;
+            padding: 10px;
+            margin: 10px;
+        }
+        h2{
+            background-color: coral;
+        }
+        p span{
+            block-size: darkblue;
+            padding: 0;
+            margin: 0;
+        }
+        .highlight{
+                background-color: lightgreen ;
+        }
+        #element03{
+            background-color:purple;
+            color: white;
+        }
+        div.box p.first {
+            background-color:darksalmon;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Basic Selectors</h1>
+    <hr>
+    <h2>Universal selector: * </h2>
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, harum hic inventore blanditiis laboriosam repellendus alias? Et non deserunt cum impedit nulla ex, hic porro odio reprehenderit voluptas est in.
+        </p>
+    </div>
+    <h2>Type /label selector: h2</h2>
+    <h2>Desending selector: p span</h2>
+    <div>
+        <p>
+            <span>Lorem ipsum dolor</span> sit amet consectetur adipisicing elit. Eos aperiam ullam voluptatem sint doloremque nobis temporibus! Sed minus repellendus voluptatum! Veritatis amet vitae <span>laudantium illo nesciunt, dolorum beatae quia doloribus.</span>
+        </p>
+    </div>
+    <h2 class="highlight">Class selector: .highlight</h2>
+    <h2>Id selector: #elem03</h2>
+    <ol>
+        <li id="element01">Element 1</li>
+        <li id="element02">Element 2</li>
+        <li id="element03">Element 3</li>
+        <li id="element04">Element 4</li>
+        <li id="element05">Element 5</li>
+    </ol>
+    <h2>Combine selector: div.box p.first</h2>
+    <div class="box">
+        <p class="first">lorem</p>
+        <p>lorem</p>
+        <p>lorem</p>
+        <p>lorem</p>
+        <p>lorem</p>
+    </div>
+</body>
+</html>
