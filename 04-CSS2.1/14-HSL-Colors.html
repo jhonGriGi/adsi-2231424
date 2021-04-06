@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color HSL</title>
+    <style>
+        section {margin: 0px auto;}
+        section.row1,
+        section.row2{
+            width:600px;
+        }
+        section.row3{
+            width: 480px; 
+        }
+        section.row4{
+            width: 360px;
+        }
+        section div.box{
+            background-color:hsl(0, 0%, 75%);
+            display: inline-block;
+            font-family: arial;
+            line-height: 10em;
+            font-size: 0.7em;
+            margin-left: -4px;
+            text-align: center;
+            height: 120px;
+            width: 120px;
+        }
+        section div.txt-white{color: hsl(0, 0%, 100%);}
+        /* section row 1 */
+        section div.box.maroon{background-color:hsl(0, 100%, 25%);}
+        section div.box.red{background-color:hsl(0, 100%, 50%);}
+        section div.orange{background-color: hsl(39, 100%, 50%);}
+        section div.yellow{background-color: hsl(60, 100%, 50%);}
+        section div.olive{background-color: hsl(60, 100%, 25%);}
+        /* section row 2 */
+        section div.purple{background-color: hsl(300, 100%, 25%)}
+        section div.fuchsia{background-color: hsl(300, 100%, 50%);}
+        section div.white{background-color: hsl(0, 0%, 100%);}
+        section div.lime{background-color: hsl(120, 100%, 50%);}
+        section div.green{background-color: hsl(120, 100%, 25%);}
+        /* section row 3 */
+        section div.navy{background-color: hsl(240, 100%, 25%);}
+        section div.blue{background-color: hsl(240, 100%, 50%);}
+        section div.aqua{background-color: hsl(180, 100%, 50%);}
+        section div.teal{background-color: hsl(180, 100%, 25%);}
+        /* section row 4 */
+        section div.black{background-color: hsl(0, 0%, 0%);}
+        section div.silver{background-color: hsl(0, 0%, 75%);}
+        section div.grey{background-color: hsl(0, 0%, 50%);}
+    </style>
+</head>
+<body>
+    <section class="row1">
+        <div class="box maroon txt-white">hsl(0,100%,25%)</div>
+        <div class="box red">hsl(0,100%,50%)</div>
+        <div class="box orange">hsl(39,100%,50%)</div>
+        <div class="box yellow">hsl(60,100%,50%)</div>
+        <div class="box olive txt-white">hsl(60,100%,25%)</div>
+    </section>
+    <section class="row2">
+        <div class="box purple txt-white">hsl(300,100%,25%)</div>
+        <div class="box fuchsia">hsl(300,100%,50%)</div>
+        <div class="box white">hsl(0,0%,100%)</div>
+        <div class="box lime">hsl(120,100%,50%)</div>
+        <div class="box green txt-white">hsl(120,100%,25%)</div>
+    </section>
+    <section class="row3">
+        <div class="box navy txt-white">hsl(240,100%,25%)</div>
+        <div class="box blue">hsl(240,100%,50%)</div>
+        <div class="box aqua">hsl(180,100%,50%)</div>
+        <div class="box teal txt-white">hsl(180,100%,25%)</div>
+    </section>
+    <section class="row4">
+        <div class="box black txt-white">hsl(0,0%,0%)</div>
+        <div class="box silver">hsl(0,0%,75%)</div>
+        <div class="box grey txt-white">hsl(0,0%,50%)</div>
+    </section>
+</body>
+</html>
