@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="section">
+            <nav>
+                <div class="nav-wrapper">
+                <a href="#" class="brand-logo">
+                    <img src="img/147144.png" height="60px" width="60px" alt="">
+                </a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="sass.html">Sass</a></li>
+                    <li><a href="badges.html">Components</a></li>
+                    <li><a href="collapsible.html">JavaScript</a></li>
+                </ul>
+                </div>
+            </nav>
+         </div>
+
+        <div class="section">
+            <!-- Fila 1 -->
+            <div >
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input type="text" name="user_name" id="user_name">
+                        <label for="user_name">Nombre completo</label>
+                        </input>
+                    </div>
+                </div>
+            </div>
+            <!-- Fila 2 -->
+            <div class="section">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">back_hand</i>
+                        <input type="number" name="user_age" id="user_age" class="validate">
+                        <label for="user_age">Edad</label>
+                        </input>
+                    </div>
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">phone</i>
+                        <input type="number" name="user_tel" id="user_tel">
+                        <label for="user_tel">Telefono</label>
+                        </input>
+                    </div>
+                </div>
+            </div>
+            <!-- Fila 3 -->
+            <div class="section">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">mark_email_read</i>
+                        <input type="email" name="user_email" id="user_email">
+                        <label for="user_email">Email</label></input>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <!-- Seccion: botones -->
+                <div class="row center">
+                    <div class="col s12">
+                        <a class="btn-floating btn-large waves-effect waves-light blue darken-3" onclick="capturaValoresInput()">
+                            <i class="material-icons prefix">add</i>
+                        </a>
+                    </div>
+                </div>
+                <!-- Seccion de resultado -->
+                <div class="row center">
+                    <div class="col s12">
+                        <!-- Etiqueta para ver salida o resultado -->
+                        <output id="verNombre">
+                        </output>
+                        <output id="verEdad">
+
+                        </output>
+                        <output id="verTel">
+
+                        </output>
+                        <output id="verEmail">
+                            
+                        </output>
+                    </div>
+                </div>
+        </div>
+    </div>
+</body>
+<script src="js/formulario.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</html>
