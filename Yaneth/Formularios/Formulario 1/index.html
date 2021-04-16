@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+    	ul.right{
+    		display: flex
+    	}
+    	output{
+    		display:block;
+    	}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="section">
+            <nav>
+                <div class="nav-wrapper">
+                <a href="#" class="brand-logo">
+                    <img src="../img/147144.png" height="60px" width="60px" alt="">
+                </a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                	<i class="material-icons prefix">home</i>
+                    <li><a href="index.html">Home</a></li>
+                    <i class="material-icons prefix">face</i>
+                    <li><a href="clientes.html">Clientes</a></li>
+                    <i class="material-icons prefix">arrow_drop_down</i>
+                   	<i class="material-icons prefix">local_shipping</i>
+                    <li><a href="productos.html">Productos</a></li>
+                    <i class="material-icons prefix">arrow_drop_down</i>
+                    <i class="material-icons prefix">shopping_cart</i>
+                    <li><a href="pedidos.html">Pedidos</a></li>
+                    <i class="material-icons prefix">arrow_drop_down</i>
+
+                </ul>
+                </div>
+            </nav>
+         </div>
+
+        <div class="section">
+            <!-- Fila 1 -->
+            <h4>Cadastrar Cliente</h4>
+            <div >
+                <div class="row">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input type="text" name="user_name" id="user_name">
+                        <label for="user_name">Nombre completo</label>
+                        </input>
+                    </div>
+                    <div class="input-field col s6">
+                    	<i class="material-icons prefix">person</i>
+                    	<input type="number" name="person_id" id="person_id">
+                    	<label for="person_id">Documento</label>
+                    	</input>
+                    </div>
+                </div>
+            </div>
+            <!-- Fila 2 -->
+            <div class="section">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">mark_email_read</i>
+                        <input type="email" name="user_email" id="user_email">
+                        <label for="user_email">Email</label></input>
+                    </div>
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">phone</i>
+                        <input type="number" name="user_tel" id="user_tel">
+                        <label for="user_tel">Telefono</label>
+                        </input>
+                    </div>
+                </div>
+            </div>
+            <!-- Fila 3 -->
+            <div class="section">
+                <div class="row">
+                   <div class="input-field col s6">
+                        <i class="material-icons prefix">phone</i>
+                        <input type="number" name="user_tel2" id="user_tel2">
+                        <label for="user_tel2">Telefono</label>
+                        </input>
+                    </div>
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">phone</i>
+                        <input type="number" name="user_tel3" id="user_tel3">
+                        <label for="user_tel3">Telefono</label>
+                        </input>
+                    </div>
+                </div>
+            </div>
+            <!-- Fila 4 -->
+            <div class="section">
+                <div class="row">
+                   <div class="input-field col s6">
+                   		<i class="material-icons prefix">location_city</i>
+                        <input type="number" name="postal_id" id="postal_id">
+                        <label for="postal_id">Direccion postal</label>
+                    </input>
+                    </div>
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">location_city</i>
+                        <input type="number" name="user_dir1" id="user_dir1">
+                        <label for="user_dir1">Direccion 1</label>
+                        </input>
+                    </div>
+                </div>
+            </div>
+            <!-- Fila 5 -->
+            <div class="section">
+                <div class="row">
+                   <div class="input-field col s6">
+                   		<i class="material-icons prefix">location_city</i>
+                        <input type="text" name="user_dir2" id="user_dir2">
+                        <label for="user_dir2">Direccion 2</label>
+                    </input>
+                    </div>
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">location_city</i>
+                        <input type="text" name="user_dir3" id="user_dir3">
+                        <label for="user_dir3">Direccion 3</label>
+                        </input>
+                    </div>
+                </div>
+            </div>
+            <!-- Fila 6 -->
+            <div class="section">
+                <div class="row">
+                   <div class="input-field col s6">
+                   		<i class="material-icons prefix">location_city</i>
+                        <input type="text" name="optional_dir" id="optional_dir">
+                        <label for="optional_dir">Direccion opcional</label>
+                    </input>
+                    </div>
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">location_city</i>
+                        <input type="number" name="optional_dir2" id="optional_dir2">
+                        <label for="optional_dir2">Direccion opcional</label>
+                        </input>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <!-- Seccion: botones -->
+                <div class="row left">
+                    <div class="col s12">
+						<button class="btn waves-effect waves-light" type="submit" name="action" onclick="capturaValoresInput()">Submit
+							<i class="material-icons right">send</i>
+						</button>
+                    </div>
+                </div>
+                <!-- Seccion de resultado -->
+                <div class="row center">
+                    <div class="col s12">
+                        <!-- Etiqueta para ver salida o resultado -->
+                        <output id="verNombre"> </output>
+                        <output id="verDocumento"></output>
+                        <output id="verEmail"></output>
+                        <output id="verTel1"></output>
+                        <output id="verTel2"> </output>
+                        <output id="verTel3"> </output>
+                        <output id="verPostal"></output>
+                        <output id="verDir1"></output>
+                        <output id="verDir2"></output>
+                        <output id="verDir3"></output>
+                        <output id="verOption"></output>
+                        <output id="verOption"></output>
+                    </div>
+                </div>
+        </div>
+    </div>
+</body>
+<script src="Formulario.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</html>

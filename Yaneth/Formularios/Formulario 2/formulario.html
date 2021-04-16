@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulario</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<Style>
+		output{
+			display: block;
+		}
+	</Style>
+</head>
+<body>
+	<div class="container">
+		<!-- Fila 1 -->
+		<div class="section">
+			<h3>Registration form</h3>
+			<div class="row center">
+				<div class="input-field col s12">
+					<i class="material-icons prefix">account_box</i>
+					<input type="text" name="user_name" id="user_name">
+					<label for="user_name">Nombre Completo</label>
+					</input>
+				</div>
+			</div>
+		</div>
+		<!-- Fila 2 -->
+		<div class="section">
+			<div class="row center">
+				<div class="input-field col s12">
+					<i class="material-icons prefix">email</i>
+					<input type="text" name="user_Email" id="user_Email">
+					<label for="user_Email">Correo Electronico</label></input>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Fila 3 -->
+		<div class="section">
+		<div class="row center">
+				<div class="input-field col s6">
+					<i class="material-icons prefix">password</i>
+					<input type="password" name="user_pass" id="user_pass">
+					<label for="user_pass">Password</label></input>
+				</div>
+				<div class="input-field col s6">
+					<i class="material-icons prefix">password</i>
+					<input type="password" name="user_confirm" id="user_confirm">
+					<label for="user_confirm">Confirm password</label></input>
+				</div>
+			</div>
+		</div>
+		<!-- Fila 4 -->
+		<div class="section">
+			<h2>Personal Details</h2>
+			<div class="row center">
+				<div class="input-field col s6">
+					<input type="text" name="first_name" id="first_name">
+					<label for="first_name">First name</label>
+				</div>
+				<div class="input-field col s6">
+					<input type="text" name="last_name" id="last_name">
+					<label for="last_name">Last name</label>
+				</div>
+			</div>
+			<div class="row center">
+				<div class="input-field col s12">
+					<input type="text" name="user_gender" id="user_gender">
+					<label for="user_gender">Gender</label></input>
+				</div>
+			</div>
+		</div>
+		<!-- Fila 5 -->
+		<div class="row">
+          <form action="" method="">        
+              <label>
+                  <input type="checkbox" name="option">
+                  <span>I want to recive news and special offers</span>
+              </label>        
+          </form>
+          <form action="" method="">        
+              <label>
+                  <input type="checkbox" name="option">
+                  <span>I agree with the Terms and Conditions</span>
+              </label>        
+          </form>
+        </div>    
+		<!-- Botones -->
+        <div class="row right">
+            <div class="col s12">
+                <button class="btn waves-effect waves-light" type="submit" name="action" onclick="capturaValoresInput()">Submit              
+                </button>
+            </div>
+        </div>
+        <!-- output -->
+        <div class="row center">
+        	<div class="col s12">
+		        <output id="verNombre"></output>
+		        <output id="verEmail"></output>
+		        <output id="verPass"></output>
+		        <output id="verFirst"></output>
+		        <output id="verLast"></output>
+		        <output id="verGender"></output>
+	    	</div>
+    	</div>
+	</div>							
+</body>
+<script src="app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</html>
