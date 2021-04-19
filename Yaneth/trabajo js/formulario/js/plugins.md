@@ -1,0 +1,32 @@
+# Plugins for sublime text 3
+> Web developer
+---
+# Plugins
+- A File Icon
+- Advanced newfile
+- Angular Cli
+- AutoFileName
+- Babel
+- Boostrap 4 Autocomplete
+- Boostrap 4x Snippets
+- Brackethighter
+- Color Highlighter
+- Comment-snippets
+- Console Wrap
+- Emmet
+- Emmet css snippets
+- Enki theme
+- FileIcons
+- Future funk color theme
+- Halcyon theme
+- Html minifier
+- Javascript & Nodejs snippets
+- JQuery
+- JsPrettier
+- Material color scheme
+- Material theme
+- MoveTab
+- SideBarEncancements
+- Sublime Es7 react redux reactNative js snippets
+- theme spacefunk
+- zzz A File Icon zzz
