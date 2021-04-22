@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Overflow</title>
+	<style>
+		main {
+			margin: 40px auto;
+			width: 500px;
+		}
+		main section {
+			border: 1px solid #555;
+			display:inline-block;
+			height: 150px;
+			padding: 10px;
+			vertical-align: top;
+			width: 130px;
+		}
+		main section h3 {
+			background-color: #aaa;
+			margin: 0px;
+			padding: 4px;
+		}
+		main section.visible {overflow: visible;}
+		main section.hidden {overflow: hidden;}
+		main section.scroll {overflow: scroll;}
+	</style>
+</head>
+<body>
+	<main>
+		<section class="visible">
+			<h3>overflow:Visible</h3>
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero non laudantium ut, qui vero ipsum nam aliquid ipsa a corporis quis sunt eos delectus aliquam error fugiat veritatis veniam. Quidem.</p>
+		</section>
+		<section class="hidden">
+			<h3>overflow:Hidden</h3>
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero non laudantium ut, qui vero ipsum nam aliquid ipsa a corporis quis sunt eos delectus aliquam error fugiat veritatis veniam. Quidem.</p>
+		</section>
+		<section class="scroll">
+			<h3>overflow:Scroll</h3>
+			<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero non laudantium ut, qui vero ipsum nam aliquid ipsa a corporis quis sunt eos delectus aliquam error fugiat veritatis veniam. Quidem.</p>
+		</section>
+	</main>
+</body>
+</html>
