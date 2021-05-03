@@ -28,6 +28,8 @@ header div.headLogo {
 
 header div.headlist nav ul li {
     margin: 10px auto;
+    width: 148px;
+    margin-right: 16px;
     padding: 10px;
     text-align: center;
 }
@@ -301,7 +303,7 @@ footer {
 footer div.footer {
     /* border: 1px solid #000;*/
     width: 950px;
-    height: auto;
+    height: 260px;
     text-align: center;
     background-color: #fff;
     margin: 15px auto;
@@ -331,7 +333,8 @@ footer ul li {
 footer ul li a:link, footer ul li a:visited {
     text-decoration: none;
     color: #000;
-    margin: 5px;
+    margin: auto -1px;
+    width: 150px;
     padding: 5px;
     display: block;
 }
