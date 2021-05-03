@@ -1,0 +1,340 @@
+* {
+    border-radius: 20px
+}
+body {
+    margin: 5px;
+    padding: 0;
+}
+main {
+    margin: 10px auto;
+    height: auto;
+    /* border: 1px solid #777*/
+    ;
+    position: relative;
+    background-color: rgb(22, 160, 84);
+    font-family: Arial;
+}
+/* HEADER */
+
+header div.headLogo {
+    margin: 10px auto;
+    height: 190px;
+    width: 190px;
+    background-color: #07a314;
+    background-image: url("../imgs/spriteweb.png");
+    background-position: -10px 800px;
+}
+/* Header Navbar*/
+
+header div.headlist nav ul li {
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+}
+header div.headlist nav ul {
+    list-style: none;
+    text-align: center;
+}
+header div.headlist nav ul li {
+    border-bottom: 2px solid #fff;
+    background-color: #014f23;
+    display: inline-block;
+}
+header div.headlist nav ul li a:link, header div.headlist nav ul li a:visited {
+    text-decoration: none;
+    color: #fff;
+    margin: 5px;
+    padding: 5px;
+    display: block;
+}
+header div.headlist nav ul li:hover {
+    border-bottom: 2px solid #d3d609;
+    background-color: #013819;
+}
+/* Header Images */
+
+div.imgsprite {
+    /*    border: 1px solid #000;*/
+    margin: 10px auto;
+    height: 230px auto;
+    width: 940px;
+    padding: 5px;
+    background-color: #014f23;
+    text-align: center;
+}
+div.imgsprite div.imagen1, div.imagen2, div.imagen3 {
+    border: 2px solid #fff;
+    margin: 10px auto;
+    height: 200px;
+    width: 290px;
+    display: inline-block;
+    background-image: url("../imgs/spriteweb.png");
+    background-position: -1272px -7px;
+    border-radius: 3px
+}
+div.imgsprite div.imagen1 {
+    margin-right: 5px
+}
+div.imgsprite div.imagen2 {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+div.imgsprite div.imagen3 {
+    margin-left: 5px
+}
+div.imgsprite div.imagen1 div, div.imgsprite div.imagen2 div, div.imgsprite div.imagen3 div {
+    background-color: rgba(255, 225, 225, 0.3);
+    height: 70px;
+    border-radius: 3px
+}
+div.imgsprite div.imagen1 div p, div.imgsprite div.imagen2 div p, div.imgsprite div.imagen3 div p {
+    background-color: rgb(255, 255, 255, 0.3);
+    /*background-color: #fff;*/
+    /*height: 70px;*/
+    line-height: 70px;
+    margin-top: 0px;
+    font-weight: bolder;
+    font-size: 1.3em;
+    border-radius: 5px
+}
+div.imgsprite div.imagen1:hover div, div.imgsprite div.imagen2:hover div, div.imgsprite div.imagen3:hover div {
+    background-color: #fff;
+    opacity: 0.8;
+}
+/* Section */
+
+section div.allInOne {
+    margin: 30px auto;
+    /*border: 1px solid #000;*/
+    height: 835px;
+    width: 950px;
+    text-align: center;
+    background-color: #014f23;
+    padding: 0;
+}
+section div.contenido1 div {
+    height: 250px;
+    width: 900px;
+    /*border: 1px solid #000;*/
+    display: inline-block;
+    margin: 20px auto;
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+section div.contenido1 div.logoIzquierdo1 {
+    height: 72px;
+    width: 82px;
+    /*border: 1px solid #000;*/
+    display: inline-block;
+    background-image: url("../imgs/spriteweb.png");
+    background-position: 508px -501px;
+    margin-right: 10px;
+    z-index: 5;
+    position: relative;
+    top: -54px;
+    left: -18px
+}
+section div.contenido1 div.parrafo1 {
+    width: 538px;
+    height: 160px;
+    /*border: 1px solid #000;*/
+    display: inline-block;
+    z-index: 5;
+    top: -32px;
+    position: relative;
+    left: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+section div.contenido1 div.logoDerecho1 {
+    height: 160px;
+    width: 120px;
+    /*border: 1px solid #000;*/
+    display: inline-block;
+    background-image: url("../imgs/spriteweb.png");
+    background-position: -80px -213px;
+    margin-left: 10px;
+    position: relative;
+    z-index: 5;
+    top: 0px;
+    left: 27px
+}
+section div.contenido1 div:hover {
+    color: green
+}
+/*********************************/
+
+section div.contenido2 {
+    margin: 5px auto;
+    /*border: 1px solid #000;*/
+    height: 300px;
+    width: 950px;
+    text-align: center;
+    background-color: #014f23;
+    padding: 0;
+}
+section div.contenido2 {
+    height: 250px;
+    width: 900px;
+    /*border: 1px solid #000;*/
+    display: inline-block;
+    margin: -8px auto;
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+section div.contenido2 div div.logoIzquierdo2 {
+    height: 72px;
+    width: 82px;
+    /*border: 1px solid #000;*/
+    display: inline-block;
+    background-image: url("../imgs/spriteweb.png");
+    background-position: 508px -501px;
+    margin-right: 10px;
+    z-index: 5;
+    position: relative;
+    top: -32px;
+    left: -12px;
+    padding: 5px;
+}
+section div.contenido2 div.parrafo2 {
+    width: 538px;
+    height: 160px;
+    /*border: 1px solid #000;*/
+    display: inline-block;
+    z-index: 5;
+    top: 30px;
+    position: relative;
+    left: -3px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+}
+section div.contenido2 div.logoDerecho2 {
+    height: 160px;
+    width: 120px;
+    /*border: 1px solid #000;*/
+    display: inline-block;
+    background-image: url("../imgs/spriteweb.png");
+    background-position: -80px -213px;
+    margin-left: 10px;
+    position: relative;
+    z-index: 5;
+    top: 29px;
+    left: 21px
+}
+section div.contenido2:hover {
+    color: green
+}
+/*******************************************/
+
+section div.contenido3 {
+    margin: 5px auto;
+    /*border: 1px solid #000;*/
+    height: 300px;
+    width: 948px;
+    text-align: center;
+    background-color: #014f23;
+    padding: 0;
+}
+section div.contenido3 {
+    height: 240px;
+    width: 900px;
+    /*border: 1px solid #000;*/
+    display: inline-block;
+    margin: -8px auto;
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 5px;
+}
+section div.contenido3 div div.logoIzquierdo3 {
+    height: 72px;
+    width: 82px;
+    /*border: 1px solid #000;*/
+    display: inline-block;
+    background-image: url("../imgs/spriteweb.png");
+    background-position: 508px -501px;
+    margin-right: 10px;
+    z-index: 5;
+    position: relative;
+    top: -32px;
+    left: -12px;
+    padding: 5px;
+}
+section div.contenido3 div.parrafo3 {
+    width: 538px;
+    height: 160px;
+    /*border: 1px solid #000;*/
+    display: inline-block;
+    z-index: 5;
+    top: 15px;
+    position: relative;
+    left: -3px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+}
+section div.contenido3 div.logoDerecho3 {
+    height: 160px;
+    width: 120px;
+    /*border: 1px solid #000;*/
+    display: inline-block;
+    background-image: url("../imgs/spriteweb.png");
+    background-position: -80px -213px;
+    margin-left: 10px;
+    position: relative;
+    z-index: 5;
+    top: 29px;
+    left: 21px
+}
+section div.contenido3:hover {
+    color: green
+}
+/* Footer */
+
+footer {
+    /* border: 1px solid #000;*/
+    text-align: center;
+    padding: 2px;
+}
+footer div.footer {
+    /* border: 1px solid #000;*/
+    width: 950px;
+    height: auto;
+    text-align: center;
+    background-color: #fff;
+    margin: 15px auto;
+}
+footer div.logoInferior {
+    width: 250px;
+    height: 175px;
+    background-image: url("../imgs/spriteweb.png");
+    background-position: 292px -429px;
+    position: relative;
+    top: 4px;
+    left: 379px;
+}
+footer ul {
+    list-style: none;
+    text-align: center;
+}
+footer ul li {
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+}
+footer ul li {
+    ;
+    display: inline-block;
+}
+footer ul li a:link, footer ul li a:visited {
+    text-decoration: none;
+    color: #000;
+    margin: 5px;
+    padding: 5px;
+    display: block;
+}
+footer ul li a:hover {
+    border-bottom: 3px solid #014f23
+}
