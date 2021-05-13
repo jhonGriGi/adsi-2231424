@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+            <meta content="width=device-width, initial-scale=1.0" name="viewport">
+                <title>
+                    Document
+                </title>
+            </meta>
+        </meta>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+            <!--Import Google Icon Font-->
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            </link>
+        </link>
+    </head>
+    <body>
+        <div class="container section">
+            <!-- Fila 1 boton -->
+            <div class="row">
+                <div class="col">
+                    <button class="waves-effect waves-light btn" onclick="funcionSaludo()">
+                        ver Saludo
+                    </button>
+                </div>
+            </div>
+            <!-- Fila 2: mostrar la salida   -->
+            <div class="row center">
+                <div class="col">
+                    <output id="ver">
+                    </output>
+                </div>
+            </div>
+            <!-- Fila 3: boton y output  -->
+            <div class="row center">
+                <div class="col">
+                    <button class="waves-effect waves-light btn" onclick="funcionMascota()">
+                        ver info mascota
+                    </button>
+                </div>
+                <div class="col s8">
+                    <output id="ver1">
+                    </output>
+                </div>
+            </div>
+            <!-- Fila 4: boton y output -->
+            <div class="row center">
+                <div class="col">
+                    <button class="waves-effect waves-light btn" onclick="userInformation()">
+                        ver info personal
+                    </button>
+                </div>
+                <div class="col s8">
+                    <output id="ver2">
+                    </output>
+                </div>
+            </div>
+            <!-- Fila 5: boton y output -->
+            <div class="row center">
+                <div class="col">
+                    <button class="waves-effect waves-light btn" onclick="userPett()">
+                        ver info Mascota
+                    </button>
+                </div>
+                <div class="col s8">
+                    <output id="ver3">
+                    </output>
+                </div>
+            </div>
+            <!-- Fila 6: boton y output -->
+            <div class="row center">
+                <div class="col">
+                    <button class="waves-effect waves-light btn" onclick="userSerie()">
+                        ver info serie favorita
+                    </button>
+                </div>
+                <div class="col s8">
+                    <output id="ver4">
+                    </output>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+    </script>
+    <script src="js/functions.js">
+    </script>
+</html>
