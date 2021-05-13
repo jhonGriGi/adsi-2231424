@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+            <meta content="IE=edge" http-equiv="X-UA-Compatible">
+                <meta content="width=device-width, initial-scale=1.0" name="viewport">
+                    <title>
+                        Transitions
+                    </title>
+                    <link href="css/master.css" rel="stylesheet">
+                        <style>
+                            section{
+                                background: url(imgs/asssinsCreed.png) no-repeat center;
+                                background-size: cover;
+                                height: 300px;
+                                width: 220px;
+                                margin: 0px auto 40px auto;
+                                /*border: 2px solid #ed0202;*/
+                            }
+                            section.box1{
+                                transition: all 1.5s ease-in
+                            }
+                            section.box1:hover{
+                                transform: scale(1.5);
+                            }
+                            section.box2{
+                                transition: transform 1s ease-out
+                            }
+                            section.box2:hover{
+                                transform: rotate(360deg)
+                            }
+                            section.box3{
+                                transition: transform .5s linear,
+                                            width .5s linear .5s,
+                                            height .5s linear .5s;
+                                           
+                            }
+                            section.box3:hover{
+                                transform: translateX(200px);
+                                width: 400px;
+                                height: 400px;
+                                
+
+                            }
+                            section.box4{
+                                background-color: #c00;
+                                background-image: none;
+                                transition: all 1s ease-in-out;
+                            }
+                            section.box4:hover{
+                                background-color: #00c;
+                            }
+                            section.box5{
+                                background-color: #0c0;
+                                background-image: none;
+                                transition: background 1.5s, width .5s 1.5s;
+                            }
+                            section.box5:hover{
+                                background-color: #060;
+                                width: 600px;
+                            }
+                        </style>
+                    </link>
+                </meta>
+            </meta>
+        </meta>
+    </head>
+</html>
+<body>
+    <main>
+        <h1>
+            <span>
+                <a href="index.html">
+                    ←
+                </a>
+            </span>
+            Transition
+        </h1>
+        <h3>
+            transition: all 1s ease-in
+        </h3>
+        <section class="box1">
+        </section>
+        <h3>
+            transition: all 1s ease-out
+        </h3>
+        <section class="box2">
+        </section>
+        <h3>
+            transition: transform .5s linear,
+                                            width .5s linear .5s,
+                                            height .5s linear .5s;
+        </h3>
+        <section class="box3">
+        </section>
+        <h3>
+            transition: all 1s ease-in-out
+        </h3>
+        <section class="box4">
+        </section>
+        <h3>
+            transition: background 1.5s, width .5s 1.5s;
+        </h3>
+        <section class="box5">
+        </section>
+    </main>
+</body>
