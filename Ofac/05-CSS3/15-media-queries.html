@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+            <meta content="width=device-width, initial-scale=1.0" name="viewport">
+                <title>
+                    Media Queries
+                </title>
+            </meta>
+        </meta>
+        <style>
+            *{
+                transition: all .5s ease-out;
+            }
+            body{
+                background-color: #013571;
+                color: #ffffffaa;
+                font: 16px Verdana;
+                margin: 0;
+                padding: 0;
+            }
+            main{
+                border: 10px solid #ffffff66;
+                margin: 0px auto;
+                padding: 20px;
+            }
+            main figure.logo{
+                background: url(imgs/pepsi01.png) no-repeat center;
+                height: 354px;
+                width: 919px;
+                margin: 0px auto;
+            }
+            main h1{
+                text-align: center;
+            }
+            main h1 small {
+                font-size: .4em;
+            }
+            main h1 small.bp2,
+            main h1 small.bp3{
+                display: none;
+            }
+            @media (max-width: 1024px){
+                main figure.logo{
+                    background: url(imgs/pepsi02.png) no-repeat center;
+                    height: 370px;
+                    width: 348px;
+                }
+                main h1 small.bp1,
+                main h1 small.bp3{
+                    display: none;
+                }
+                main h1 small.bp2{
+                    display: inline;
+                }
+            }
+            @media (max-width: 720px){
+                main figure.logo{
+                    background: url(imgs/pepsi03.png) no-repeat center;
+                    height: 160px;
+                    width: 165px;
+                }
+                main h1 small.bp1,
+                main h1 small.bp2{
+                    display: none;
+                }
+                main h1 small.bp3{
+                    display: inline;
+                }
+            }
+            main p {
+                text-align: justify;
+                line-height: 1.6em;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <figure class="logo">
+            </figure>
+            <h1>
+                Media Queries
+                <small class="bp1">
+                    ( > 1024px )
+                </small>
+                <small class="bp2">
+                    ( < 1024px )
+                </small>
+                <small class="bp3">
+                    ( < 780px )
+                </small>
+            </h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing, elit. Earum maiores provident consectetur veniam nam vero praesentium asperiores unde hic dignissimos doloribus magni eius sint, quo, temporibus, odit ipsa quis, minima non expedita. Dolor nemo velit, adipisci odit asperiores at, consequatur quas dolores nostrum accusamus modi repudiandae aperiam ea odio quaerat, illo necessitatibus itaque id eaque laborum ipsam aliquam quo corporis, laudantium dolorum? Quis iste ipsam quos tenetur voluptas a nobis vel, aliquam, illo ad error quia quo totam? Ad repellendus, aliquam. Eveniet tempore veritatis, cum. Assumenda quos alias labore! Dolor facere, ducimus sequi. Quasi ut dolore repudiandae ratione temporibus ex, sit quas at totam, beatae possimus atque dolor, laborum qui corrupti recusandae numquam nam minus inventore. Aperiam voluptas aliquid dicta neque deserunt, maxime labore voluptatum ducimus ratione omnis eligendi quasi quaerat, animi error doloremque assumenda, debitis, ipsa laborum ipsum beatae sit consequatur ipsam. Ratione quidem, fugiat labore officia quae voluptatibus distinctio doloremque autem totam voluptate omnis eaque necessitatibus repellendus, aperiam culpa. Quisquam exercitationem optio eaque tempore vel, delectus minima dolores fuga iusto cum consequatur mollitia placeat id voluptates facilis vero tempora, nihil, porro animi! Enim molestias corporis dolore reprehenderit non veniam ducimus exercitationem, natus quisquam placeat minima neque fugit debitis.
+            </p>
+        </main>
+    </body>
+</html>

@@ -21,3 +21,8 @@ main h1 {
 main h3 {
     text-align: center;
 }
+@media (min-width: 414px) {
+    main {
+        width: 345px;
+    }
+}
