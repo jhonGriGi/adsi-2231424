@@ -231,20 +231,24 @@ div#section div.groupEdward div.sectionBox div.text p {
 @media(min-width: 720px) {
     div#section div.groupEdward div.sectionBox div.edwardFace {
         text-align: left;
+        margin-left: 68px;
         display: inline-block;
     }
     div#section div.groupEdward div.sectionBox div.text {
         height: 300px;
-        width: 527px;
+        width: 400px;
         float: right;
         text-align: right;
         display: inline-block;
     }
 }
 @media (min-width: 1024px) {
+    div#section div.groupEdward div.sectionBox div.edwardFace {
+        margin-left: 22px;
+    }
     div#section div.groupEdward div.sectionBox div.text {
         height: 300px;
-        width: 805px;
+        width: 733px;
         text-align: left;
         display: inline-block;
     }
@@ -284,23 +288,24 @@ div.groupArno div.sectionBox p {
 @media(min-width: 720px) {
     div.groupArno div.sectionBox div.arnoFace {
         text-align: left;
+        margin-left: 68px;
         display: inline-block;
     }
     div.groupArno div.sectionBox div.text {
         height: 300px;
-        width: 527px;
+        width: 400px;
         float: right;
         text-align: right;
         display: inline-block;
     }
-    /*div.#section div.groupEdward div.sectionBox h1 {
-        text-align: left
-    }*/
 }
 @media (min-width: 1024px) {
+    div.groupArno div.sectionBox div.arnoFace {
+        margin-left: 22px;
+    }
     div.groupArno div.sectionBox div.text {
         height: 300px;
-        width: 805px;
+        width: 733px;
         text-align: left;
         display: inline-block;
     }
