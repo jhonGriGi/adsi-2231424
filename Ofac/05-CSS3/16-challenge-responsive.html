@@ -8,6 +8,7 @@
     <style>
         * {
             transition: all .5s ease-out;
+            overflow-x: hidden;
         }
         body {
             background-color: #F6F6F6;
@@ -42,7 +43,7 @@
             position: relative;
             border-radius: 5px;
         }
-        div.images  div.boxheader {
+        div.images div.altair div.boxheader {
             height: 50px;
             border: 1px solid #000;
             z-index: 1;
@@ -55,6 +56,19 @@
             margin: 248px -100px;
             width: 198px;
         }
+        div.images  div.boxheader a {
+            text-decoration: none;
+            color: #fff;
+            line-height: 3em;
+            z-index: 2;
+        }
+        div.images div.altair div.boxheader:hover {
+            transition: all 1s ease-in;
+            height: 100px;
+            margin-top: 198px;
+            line-height: 6em;
+            overflow-y: hidden;
+        }
         div.images div.ezio {
             margin: 20px auto;
             border: 1px solid #000;
@@ -65,6 +79,32 @@
             text-align: center;
             position: relative;
             border-radius: 5px;
+        }
+        div.images div.ezio div.boxheader {
+            height: 50px;
+            border: 1px solid #000;
+            z-index: 1;
+            margin-top: 248px;
+            background-color: #000;
+            opacity: .8;
+            position: absolute;
+            display: inline-block;
+            text-align: center;
+            margin: 248px -100px;
+            width: 198px;
+            }
+        div.images div.ezio div.boxheader a {
+            text-decoration: none;
+            color: #fff;
+            line-height: 3em;
+            z-index: 2;
+        }
+        div.images div.ezio div.boxheader:hover {
+            transition: all .5s ease-in;
+            height: 100px;
+            margin-top: 198px;
+            line-height: 6em;
+            overflow-y: hidden;
         }
         div.images div.connor {
             margin: 20px auto;
@@ -77,6 +117,32 @@
             position: relative;
             border-radius: 5px;
         }
+        div.images div.connor div.boxheader {
+            height: 50px;
+            border: 1px solid #000;
+            z-index: 1;
+            margin-top: 248px;
+            background-color: #000;
+            opacity: .8;
+            position: absolute;
+            display: inline-block;
+            text-align: center;
+            margin: 248px -100px;
+            width: 198px;
+        }
+        div.images div.connor div.boxheader a {
+            text-decoration: none;
+            color: #fff;
+            line-height: 3em;
+            z-index: 2;
+        }
+        div.images div.connor div.boxheader:hover {
+            transition: all .5s ease-in;
+            height: 100px;
+            margin-top: 198px;
+            line-height: 6em;
+            overflow-y: hidden;
+        }
         div.images div.edward {
             margin: 20px auto;
             border: 1px solid #000;
@@ -88,18 +154,33 @@
             position: relative;
             border-radius: 5px;
         }
-        div.images  div.boxheader a {
+        div.images div.edward div.boxheader {
+            height: 50px;
+            border: 1px solid #000;
+            z-index: 1;
+            margin-top: 248px;
+            background-color: #000;
+            opacity: .8;
+            position: absolute;
+            display: inline-block;
+            text-align: center;
+            margin: 248px -100px;
+            width: 198px;
+        }
+        div.images div.edward div.boxheader a {
             text-decoration: none;
             color: #fff;
             line-height: 3em;
             z-index: 2;
         }
-        div.images div.altair div.boxheader:hover {
-            transition: all 1s ease-in;
+        div.images div.edward div.boxheader:hover {
+            transition: all .5s ease-in;
             height: 100px;
             margin-top: 198px;
             line-height: 6em;
+            overflow-y: hidden;
         }
+        
         @media (min-width: 720px) {
             div.images div.altair, div.images div.ezio, div.images div.connor, div.images div.edward {
                 display: inline-block;
