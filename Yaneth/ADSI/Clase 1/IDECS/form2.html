@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h4>Material Design Registrer Form</h4>
+        <div class="col s10 z-depth-2">
+            <div class="row center">
+                <div class="input-field col s11">
+                    <i class="material-icons prefix">person</i>
+                    <input type="text" name="user_name" id="user_name">
+                        <label for="User_name">Username</label></input>
+                </div>
+            </div>
+            <div class="row center">
+                <div class="input-field col s11">
+                    <i class="material-icons prefix">email</i>
+                    <input type="email" name="user_email" id="user_email">
+                    <label for="user_email">Email</label>
+                </div>
+            </div>
+            <div class="row center">
+                <div class="input-field col s11">
+                    <i class="material-icons prefix">lock</i>
+                    <input type="password" name="user_pass" id="user_pass">
+                    <label for="user_pass">Password</label>
+                </div>
+            </div>
+            <div class="row center">
+                <div class="input-field col s11">
+                    <i class="material-icons prefix">lock</i>
+                    <input type="password" name="user_pass2" id="user_pass2">
+                    <label for="user_pass2">Confirm Password</label>
+                </div>
+            </div>
+            <div class="row center">
+                <div class="col s11">
+                    <button class="btn waves-effect waves-light btn-block" type="submit" name="action" onclick="capturaValoresInput()">Register now             
+                    </button>
+                </div>
+            </div> 
+            <div class="row center">
+                <div class="col s11">
+                    <span>Already have an account?</span>
+                    <a href="#!" class="collection-item">Login</a>
+                </div>
+            </div>
+            <!-- Output -->
+            <div class="row center">
+                <div class="col s11">
+                    <output id="verNombre"></output>
+                    <br>
+                    <output id="verEmail"></output>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="form2.js"></script>
+</html>
