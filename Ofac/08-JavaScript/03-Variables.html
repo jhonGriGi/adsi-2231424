@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03 - Variables</title>
+    <link rel="stylesheet" href="css/master.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>
+                <span>
+                    <a href="index.html">
+                        ←
+                    </a>
+                </span>
+                03 - Variables
+        </h1>
+        </header>
+        <section>
+            <h2>Get Id</h2>
+            <strong id="year"></strong>
+            <h2>Get TagName</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, eaque?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, eaque?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, eaque?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, eaque?
+            </p>
+            <strong id="tags"></strong>
+        </section>
+    </main>
+</body>
+<script>
+    // var cadena - "cadena\
+    // de multiples \
+    // lineas"
+
+    // Get Element By Id
+    let year       = document.getElementById('year');
+    let today      = new Date();
+    year.innerText = "Current year: " + today.getFullYear();
+    // Get Elements By Tagname
+    let ntags      = document.getElementsByTagName('p');
+    let tags       = document.getElementById('tags');
+    tags.innerText = "There are: " + ntags.length + " paragrahps";
+    // Get Elements By ClassName
+
+    // Query Selector 
+
+
+</script>
+</html>
