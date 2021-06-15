@@ -16,7 +16,7 @@
                         ←
                     </a>
                 </span>
-                03 - Variables
+                04 - Get Elements
         </h1>
         </header>
         <section>
@@ -36,6 +36,19 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, eaque?
             </p>
             <strong id="tags"></strong>
+						<!--   --!>
+						<h2>Get ClassName</h2>
+						<ul>
+							<li class="element">element 1</li>
+							<li class="element">element 2</li>
+							<li class="element">element 3</li>
+							<li class="element">element 4</li>
+							<li class="element">element 5</li>
+						</ul>
+						<!-- -->
+						<h2>Query Selector/Selector All</h2>
+						<btn class="btn">Button 1</btn>
+						<btn class="btn">Button 2</btn>
         </section>
     </main>
 </body>
@@ -53,9 +66,15 @@
     let tags       = document.getElementById('tags');
     tags.innerText = "There are: " + ntags.length + " paragrahps";
     // Get Elements By ClassName
-
+       let elements   = document.getElementsByClassName('element');
+        elements[2].style.backgroundColor = '#f0dc68';
+        elements[2].style.fontWeight = '800';
+        elements[2].style.width = '200px';
     // Query Selector 
-
+    let btn = document.querySelector('section button.btn')
+		let btns = document.querySelectorAll('section button.btn')
+		btn.style.color = "#900"
+		btns[1].style.color = "#090"
 
 </script>
 </html>
