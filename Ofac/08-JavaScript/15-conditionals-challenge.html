@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditionals challenge</title>
+    <link rel="stylesheet" href="css/master.css">
+    <style>
+        .main-page {
+            display: grid;
+            grid-template-columns: 1fr 4fr 1fr;
+            grid-template-rows: 6;
+        }
+        .main-page__title { 
+            grid-column: 2;
+            margin: 10px auto;
+        }
+        div,
+        button {
+            margin: 10px auto;
+            grid-column: 2;
+        }
+        .main-page--logo {
+            display: flex;
+        }
+        .main-page__img {
+            width: 177px;
+            grid-row: 2;
+            height: 173px;
+            border-radius: 50%;
+            display: inline-block;
+            justify-content: space-between;
+            cursor: pointer;
+        }
+        .main-page--female {
+            background-image: url("imgs/female.jpg");
+            background-repeat: no-repeat;
+        }
+        
+        .main-page--male {
+            background-image: url("imgs/male.jpg") ;
+            background-repeat: no-repeat;
+        }
+        
+        .select { 
+            border: 2px solid #0c8333;
+        }
+        .main-page__input-user,
+        .main-page__input-birthday {
+            padding: 20px 30px;
+            background-color: #F5EBEB;
+            border-radius: 20px;
+        }
+        #username,
+        #user-birthday {
+            border:0;
+            outline-width: 0;
+            border-bottom: 1px solid #000;
+            background-color: #F5EBEB;
+        }
+        .main-page__button {
+            width: 374px;
+            height: 84px;
+            padding: 0;
+            border-radius: 50px;
+            border: 0;
+            background-color: #2CF0C1;
+            cursor: pointer;
+            /* font-weight: 600; */
+            font-size: 30px;
+            grid-column: 2;
+            margin: 0 auto;
+        }
+        .main-page__button:active {
+            background-color: #1ab18d;
+        }
+
+        #output-info {
+            width: 100px;
+            height: 100px;
+            background-color: #8df1ba;
+            border: 1px solid #096d36;
+            grid-column: 2;
+            margin: 10px auto;
+            position: relative;
+        }
+
+        .main-page__output {
+            font-weight: bold;
+            grid-column: 2  ;
+            text-align: center;
+        }
+
+        .soldier--active {
+            color: #054924;
+        }
+
+        .soldier--noActive {
+            color: #a51a10;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1> <span><a href="index.html">&larr;</a></span> Conditionals challenge</h1>
+        </header>
+        <section>
+           <div class="main-page">
+               <h4 class="main-page__title">Please fill your information</h4>
+               <div class="main-page--logos">
+                    <div class="main-page__img main-page--female" id="female"></div>
+                    <div class="main-page__img main-page--male" id="male"></div>
+               </div>
+               <div class="main-page__input-user">
+                   <label for="username">First Name: </label>
+                   <input type="text" name="username" id="username">
+               </div>
+               <div class="main-page__input-birthday">
+                   <label for="user-birthday">Birth-day: </label>
+                   <input type="date" name="user-birthday" id="user-birthday">
+               </div>
+               <input type="button" value="Verify" class="main-page__button">
+                <p class="main-page__output" id="information">
+                    La persona: <span id="username__info"></span> 
+                    <br>
+                    Genero: <span id="user__gender"></span> 
+                    <br>
+                    Nacido: <span id="user__birthday"></span> 
+                    <br>
+                    Estado de soldado: <span id="user__soldier"></span>
+                </p>
+           </div>
+        </section>
+    </main>
+
+    <script>
+        // Variables
+        let male = document.getElementById('male');
+        let female = document.getElementById('female');
+        let output = document.getElementById('output-info');
+        let userName = document.querySelector("#username");
+        
+        let hasClass;   
+        let button = document.querySelector(".main-page__button");
+        var genero = '';
+        
+     
+        // Imagenes
+        // Obtener el genero de la persona
+        male.onclick = function() {
+            male.classList.add('select');
+            female.classList.remove('select');
+            hasClass = male.classList.contains('select');
+
+            if(hasClass) {
+                male.onclick = function() {
+                    male.classList.toggle('select');
+                    female.classList.remove('select');
+                }
+            }
+            
+            genero = "Masculino"
+        }
+
+        female.onclick = function() {
+            male.classList.remove('select');
+            female.classList.add('select');
+            hasClass = female.classList.contains('select');
+
+            if(hasClass) {
+                female.onclick = function() {
+                    female.classList.toggle('select');
+                    male.classList.remove('select');
+                }
+            }
+
+            genero = "Femenino"
+        }
+
+        let soldier = document.getElementById('information');
+
+        let estado = "";
+        // Ingreso de input 
+        // Obtencion de valores y se muestran al usuario
+        button.addEventListener("click",function(){
+            let textValue = document.querySelector("#username").value;
+            let birthday = document.querySelector('#user-birthday').value;
+            let fechaMinima = new Date(2002, 10, 08)
+            let fechausuario = new Date(birthday);
+
+            if (fechausuario < fechaMinima && genero == "Masculino") {
+                estado = "activo";
+            }
+            else {
+                estado = "no-activo";
+            }
+
+            if(estado == "activo") {
+                soldier.classList.add('soldier--active');
+                soldier.classList.remove('soldier--noActive');
+            }
+            else {
+                soldier.classList.add('soldier--noActive');
+                soldier.classList.remove('soldier--active');
+            }
+
+            if(textValue.length > 0 && birthday.length > 0 && genero.length > 0) {
+                document.getElementById('username__info').innerHTML = textValue;
+                document.getElementById('user__gender').innerHTML = genero;
+                document.getElementById('user__birthday').innerHTML = birthday;
+                document.getElementById('user__soldier').innerHTML = estado;
+            } else {
+                alert("Error, Por favor llene todos los campos");
+            }
+
+        })
+            
+    </script>
+    
+</body>
+</html>
