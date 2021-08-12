@@ -144,7 +144,7 @@
         
         let hasClass;   
         let button = document.querySelector(".main-page__button");
-        var genero = '';
+        let genero = '';
         
      
         // Imagenes
@@ -152,6 +152,9 @@
         male.onclick = function() {
             male.classList.add('select');
             female.classList.remove('select');
+
+            // ********************************************
+            // esta parte la coloque solo por el reto ya que no es muy optimo 
             hasClass = male.classList.contains('select');
 
             if(hasClass) {
@@ -160,6 +163,7 @@
                     female.classList.remove('select');
                 }
             }
+            //***********************************************
             
             genero = "Masculino"
         }
@@ -167,6 +171,9 @@
         female.onclick = function() {
             male.classList.remove('select');
             female.classList.add('select');
+
+            // ********************************************
+            // esta parte la coloque solo por el reto ya que no es muy optimo 
             hasClass = female.classList.contains('select');
 
             if(hasClass) {
@@ -175,6 +182,7 @@
                     male.classList.remove('select');
                 }
             }
+            //***********************************************
 
             genero = "Femenino"
         }
@@ -182,6 +190,7 @@
         let soldier = document.getElementById('information');
 
         let estado = "";
+        
         // Ingreso de input 
         // Obtencion de valores y se muestran al usuario
         button.addEventListener("click",function(){
