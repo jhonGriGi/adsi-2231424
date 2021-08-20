@@ -152,40 +152,14 @@
         // Imagenes
         // Obtener el genero de la persona
         male.onclick = function() {
-            male.classList.add('select');
+            male.classList.toggle('select');
             female.classList.remove('select');
-
-            // ********************************************
-            // esta parte la coloque solo por el reto ya que no es muy optimo 
-            hasClass = male.classList.contains('select');
-
-            if(hasClass) {
-                male.onclick = function() {
-                    male.classList.toggle('select');
-                    female.classList.remove('select');
-                }
-            }
-            //***********************************************
-            
             genero = "Masculino"
         }
 
         female.onclick = function() {
             male.classList.remove('select');
-            female.classList.add('select');
-
-            // ********************************************
-            // esta parte la coloque solo por el reto ya que no es muy optimo 
-            hasClass = female.classList.contains('select');
-
-            if(hasClass) {
-                female.onclick = function() {
-                    female.classList.toggle('select');
-                    male.classList.remove('select');
-                }
-            }
-            //***********************************************
-
+            female.classList.toggle('select');
             genero = "Femenino"
         }
 
