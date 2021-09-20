@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge Baloto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/master.css">
+    <style>
+        * {
+            font-family: 'Roboto Slab', serif;
+            transition: all 0.5s ease-in-out;
+        }
+
+        
+
+        .container {
+            height: 500px;
+            width: 1008px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .interface {
+            height: 450px;
+            width: 850px;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+            border-radius: 50px;
+            background-image: linear-gradient(135deg, #8e55d8 0, #724bd6 25%, #4d42d4 50%, #003ad2 75%, #0035d0 100%);
+        }
+
+        .inputs {
+            grid-row: 3;
+            margin: 0 auto;
+            display: inline-block;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            
+        }
+
+        .results {
+            grid-row: 5;
+            margin: 0 auto;
+            display: inline-block;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        h4.title {
+            grid-row: 1;
+            font-size: 38px;
+            margin: 0;
+            text-align: center; 
+            
+        }
+
+        h5 {
+            grid-row: 2;
+            margin: 0;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        h4.result {
+            grid-row: 4;
+            margin: 0;
+            text-align: center;
+            font-size: 38px;
+        }
+
+        h4, h5 {
+            color: rgb(229, 255, 0);
+        }
+
+        p {
+            margin-top: 0;
+            z-index: 2;
+        }
+
+        .inputs,
+        .results {
+            
+            height: 100px;
+            width: 80%;
+        }
+
+        .ball {
+            grid-row: 1;
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+        }
+
+        input {
+            outline: 2px solid black;
+        }
+        input, 
+        .showNumber {
+            text-decoration: underline;
+            outline: 0;
+            background: #f7e603;
+            border: 1px solid black;
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            margin: 4px 4px;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 5px;
+            text-align:center;
+            font-size: 38px;
+            color: #000;
+        }
+
+        .showSNumber {
+            text-decoration: underline;
+            outline: 0;
+            background: #ff0505;
+            border: 1px solid black;
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            margin: 4px 4px;
+            font-size: 15px;
+            font-weight: bold;
+            padding: 5px;
+            text-align:center;
+            font-size: 38px;
+            color: #fff;
+        }
+
+        .showNumber,
+        .showSNumber {
+            padding: 15px;
+        }
+
+        .shadow {
+            margin: 10px;
+            grid-row: 2;
+            justify-content: space/evenly;
+            height: 10px;
+            width: 50px;
+            border-radius: 50%;
+            background: rgb(32, 32, 32);
+        }
+
+        input#superball {
+            color: #fff;
+            background: #ff0505;
+        }
+
+        .botones {
+            grid-row: 6;
+            display: flex;
+            flex-direction: row;
+            margin: 10px auto;
+        }
+
+        .start {
+            background-image: radial-gradient(circle at 100% 0%, #8c63ee 0, #4d42d4 50%, #0026ba 100%);
+            border-radius: 40px;
+            height: 50px;
+            text-align: center;
+            width: 180px;
+            margin: 0 10px;
+        }
+
+        .reset {
+            background-image: radial-gradient(circle at 100% 0%, #8c63ee 0, #4d42d4 50%, #0026ba 100%);
+            border-radius: 40px;
+            height: 50px;
+            text-align: center;
+            width: 180px;
+            margin: 0 10px;
+        }
+
+        .start:hover, 
+        .reset:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+
+        .button-start,
+        .button-reset {
+            margin: 5px;
+            font-weight: bold;
+            color: rgb(229, 255, 0);
+            font-size: 30px;
+            
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1> <span><a href="index.html">&larr;</a></span>Challenge Baloto</h1>
+        </header>
+        <section>
+            <div class="container">
+                <div class="interface">
+                    <h4 class="title">Bienvenido al baloto</h4> 
+                    <h5>Ingrese sus numeros</h5>  
+                    <!-- Inputs -->
+                    <div class="inputs">
+                        <!-- Bola 1 -->
+                        <div class="ball normal-ball">
+                            <input type="text" name="ball1" id="ball1">
+                        </div>
+                        <!-- Bola 2 -->
+                        <div class="ball normal-ball">
+                            <input type="text" name="ball2" id="ball2">
+                        </div>
+                        <!-- Bola 3 -->
+                        <div class="ball normal-ball">
+                            <input type="text" name="ball3" id="ball3">
+                        </div>
+                        <!-- Bola 4 -->
+                        <div class="ball normal-ball">
+                            <input type="text" name="ball4" id="ball4">
+                        </div>
+                        <!-- Bola 5 -->
+                        <div class="ball normal-ball">
+                            <input type="text" name="ball5" id="ball5">
+                        </div>
+                        <!-- Bola 6 -->
+                        <div class="ball superball">
+                            <input type="text" name="superball" id="superball">
+                        </div>
+                        <div class="shadow"></div>
+                        <div class="shadow"></div>
+                        <div class="shadow"></div>
+                        <div class="shadow"></div>
+                        <div class="shadow"></div>
+                        <div class="shadow"></div>
+                    </div>
+                    <h4 class="result">Resultados del Baloto</h4>
+                    <!-- Resultados -->
+                    <div class="results">
+                        <!-- Bola 1 -->
+                        <div class="ball normal-ball showNumber">
+                            <p id="showBall1">0</p>
+                            <!-- <input type="text" name="ball1" id="ball1"> -->
+                        </div>
+                        <!-- Bola 2 -->
+                        <div class="ball normal-ball showNumber">
+                            <p id="showBall2">0</p>
+                            <!-- <input type="text" name="ball2" id="ball2"> -->
+                        </div>
+                        <!-- Bola 3 -->
+                        <div class="ball normal-ball showNumber">
+                            <p id="showBall3">0</p>
+                            <!-- <input type="text" name="ball3" id="ball3"> -->
+                        </div>
+                        <!-- Bola 4 -->
+                        <div class="ball normal-ball showNumber">
+                            <p id="showBall4">0</p>
+                            <!-- <input type="text" name="ball4" id="ball4"> -->
+                        </div>
+                        <!-- Bola 5 -->
+                        <div class="ball normal-ball showNumber">
+                            <p id="showBall5">0</p>
+                            <!-- <input type="text" name="ball5" id="ball5"> -->
+                        </div>
+                        <!-- Bola 6 -->
+                        <div class="ball superball showSNumber">
+                            <p id="showBall6">0</p>
+                            <!-- <input type="text" name="superball" id="superball"> -->
+                        </div>
+                    </div>
+                    <!-- Botones -->
+                    <div class="botones">
+                        <!-- Start -->
+                    <div class="start" id="start">
+                        <p class="button-start">Start</p>
+                    </div>
+                    <!-- Reset -->
+                    <div class="reset" id="reset">
+                        <p class="button-reset">Reset </p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script>
+        // Variables
+        let start = document.getElementById('start');
+        let reset = document.getElementById('reset');
+
+        start.onclick = () => {
+            let ball1 = document.getElementById('ball1').value;
+            let ball2 = document.getElementById('ball2').value;
+            let ball3 = document.getElementById('ball3').value;
+            let ball4 = document.getElementById('ball4').value;
+            let ball5 = document.getElementById('ball5').value;
+            let ball6 = document.getElementById('superball').value;
+
+            let showBall1 = document.getElementById('showBall1');
+            let showBall2 = document.getElementById('showBall2');
+            let showBall3 = document.getElementById('showBall3');
+            let showBall4 = document.getElementById('showBall4');
+            let showBall5 = document.getElementById('showBall5');
+            let showBall6 = document.getElementById('showBall6');
+
+            if (ball1 <= 0 || ball1 > 43 || ball2 <= 0 || ball2 > 43 || ball3 <= 0 || ball3 > 43 || ball4 <= 0 || ball4 > 43 || ball5 <= 0 || ball5 > 43 || ball6 <= 0 || ball6 > 16) {
+                alert('Por Favor\nIngresa correctamente todas las balotas')
+            }
+            else {
+                let userNumbers = [ball1, ball2, ball3, ball4, ball5, ball6];
+
+                // userNumbers.forEach(number => {
+                //     console.log(number);
+                // })
+
+                let result1 = Math.random() * 43;
+                let result2 = Math.random() * 43;
+                let result3 = Math.random() * 43;
+                let result4 = Math.random() * 43;
+                let result5 = Math.random() * 43;
+                let result6 = Math.random() * 16;
+
+                let vectorBaloto = [result1, result2, result3, result4, result5, result6];
+
+                for ( let i = 0; i < vectorBaloto.length; i ++ ) {
+                    if ( vectorBaloto[i] === 0 ) {
+                        vectorBaloto[i] += 1;
+                        console.log("suma")
+                    }
+                }
+
+                showBall1.innerHTML = (Math.round(result1));
+                showBall2.innerHTML = (Math.round(result2));
+                showBall3.innerHTML = (Math.round(result3));
+                showBall4.innerHTML = (Math.round(result4));
+                showBall5.innerHTML = (Math.round(result5));
+                showBall6.innerHTML = (Math.round(result6));
+            }
+            
+        }
+
+        reset.onclick = () => {
+            window.location.replace('22-challenge-baloto.html');
+        }
+    </script>
+
+</body>
+</html>
