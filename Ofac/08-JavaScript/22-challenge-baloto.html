@@ -298,12 +298,12 @@
         let reset = document.getElementById('reset');
 
         start.onclick = () => {
-            let ball1 = document.getElementById('ball1').value;
-            let ball2 = document.getElementById('ball2').value;
-            let ball3 = document.getElementById('ball3').value;
-            let ball4 = document.getElementById('ball4').value;
-            let ball5 = document.getElementById('ball5').value;
-            let ball6 = document.getElementById('superball').value;
+            let userball1 = document.getElementById('ball1').value;
+            let userball2 = document.getElementById('ball2').value;
+            let userball3 = document.getElementById('ball3').value;
+            let userball4 = document.getElementById('ball4').value;
+            let userball5 = document.getElementById('ball5').value;
+            let userball6 = document.getElementById('superball').value;
 
             let showBall1 = document.getElementById('showBall1');
             let showBall2 = document.getElementById('showBall2');
@@ -312,15 +312,18 @@
             let showBall5 = document.getElementById('showBall5');
             let showBall6 = document.getElementById('showBall6');
 
-            if (ball1 <= 0 || ball1 > 43 || ball2 <= 0 || ball2 > 43 || ball3 <= 0 || ball3 > 43 || ball4 <= 0 || ball4 > 43 || ball5 <= 0 || ball5 > 43 || ball6 <= 0 || ball6 > 16) {
+            let ball1 = parseInt(userball1);
+            let ball2 = parseInt(userball2);
+            let ball3 = parseInt(userball3);
+            let ball4 = parseInt(userball4);
+            let ball5 = parseInt(userball5);
+            let ball6 = parseInt(userball6);
+
+            if (userball1 <= 0 || userball1 > 43 || userball2 <= 0 || userball2 > 43 || userball3 <= 0 || userball3 > 43 || userball4 <= 0 || userball4 > 43 || userball5 <= 0 || userball5 > 43 || userball6 <= 0 || userball6 > 16) {
                 alert('Por Favor\nIngresa correctamente todas las balotas')
             }
             else {
                 let userNumbers = [ball1, ball2, ball3, ball4, ball5, ball6];
-
-                // userNumbers.forEach(number => {
-                //     console.log(number);
-                // })
 
                 let result1 = Math.random() * 43;
                 let result2 = Math.random() * 43;
@@ -331,12 +334,20 @@
 
                 let vectorBaloto = [result1, result2, result3, result4, result5, result6];
 
-                for ( let i = 0; i < vectorBaloto.length; i ++ ) {
-                    if ( vectorBaloto[i] === 0 ) {
-                        vectorBaloto[i] += 1;
-                        console.log("suma")
+                let acertadas = 0;
+
+                for ( let i = 0; i < 6; i++ ) {
+                    for ( let j = 0; j < 6; j++) {
+                        if ( userNumbers[i] == vectorBaloto[j] ) {
+                            acertadas++;
+                        }
+                        else {
+                            console.log("Nop")
+                        }
                     }
                 }
+                
+                console.log(acertadas);
 
                 showBall1.innerHTML = (Math.round(result1));
                 showBall2.innerHTML = (Math.round(result2));
