@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="css/master.css">
     <style>
         * {
@@ -244,7 +245,7 @@
                     </div>
                     <h4 class="result">Resultados del Baloto</h4>
                     <!-- Resultados -->
-                    <div class="results">
+                    <div class="results " id="results">
                         <!-- Bola 1 -->
                         <div class="ball normal-ball showNumber">
                             <p id="showBall1">0</p>
@@ -296,6 +297,7 @@
         // Variables
         let start = document.getElementById('start');
         let reset = document.getElementById('reset');
+        let results = document.getElementById('results');
 
         start.onclick = () => {
             let userball1 = document.getElementById('ball1').value;
@@ -346,7 +348,7 @@
                         }
                     }
                 }
-                
+
                 console.log(acertadas);
 
                 showBall1.innerHTML = (Math.round(result1));
@@ -355,6 +357,9 @@
                 showBall4.innerHTML = (Math.round(result4));
                 showBall5.innerHTML = (Math.round(result5));
                 showBall6.innerHTML = (Math.round(result6));
+
+                results.classList.toggle("animate__animated");
+                results.classList.toggle("animate__bounce");
             }
             
         }
