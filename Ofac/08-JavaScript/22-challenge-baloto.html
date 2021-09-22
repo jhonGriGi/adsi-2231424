@@ -334,22 +334,23 @@
                 let result5 = Math.random() * 43;
                 let result6 = Math.random() * 16;
 
-                let vectorBaloto = [result1, result2, result3, result4, result5, result6];
+                
+                let vectorBaloto = [Math.round(result1), Math.round(result2), Math.round(result3), Math.round(result4), Math.round(result5), Math.round(result6)];
 
                 let acertadas = 0;
+                let superballAcertada = false;
 
-                for ( let i = 0; i < 6; i++ ) {
-                    for ( let j = 0; j < 6; j++) {
+                if ( ball6 === vectorBaloto[5]) {
+                    superballAcertada = true;
+                }
+
+                for ( let i = 0; i < 5; i++ ) {
+                    for ( let j = 0; j < 5; j++) {
                         if ( userNumbers[i] == vectorBaloto[j] ) {
                             acertadas++;
                         }
-                        else {
-                            console.log("Nop")
-                        }
                     }
                 }
-
-                console.log(acertadas);
 
                 showBall1.innerHTML = (Math.round(result1));
                 showBall2.innerHTML = (Math.round(result2));
@@ -357,6 +358,19 @@
                 showBall4.innerHTML = (Math.round(result4));
                 showBall5.innerHTML = (Math.round(result5));
                 showBall6.innerHTML = (Math.round(result6));
+
+                if ( acertadas === 5 && superballAcertada === true) {
+                    alert("HAZ GANADO!!!");
+                }
+                else if ( acertadas === 4 && superballAcertada === true || acertadas === 5) {
+                    alert("Haz ganado 5 balotas");
+                }
+                else if ( acertadas === 3 && superballAcertada === true || acertadas === 4) {
+                    alert("Haz ganado 4 balotas");
+                }
+                else {
+                    alert("Lo siento haz perdido :C");
+                }
 
                 results.classList.toggle("animate__animated");
                 results.classList.toggle("animate__bounce");
