@@ -1,25 +1,56 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Challenge Arrays</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
     <main>
-        <header>
-            <h1> <span><a href="index.html">&larr;</a></span> Challenge Arrays</h1>
-        </header>
-        <section>
-
-        </section>
+      <header>
+        <h1>
+          <span><a href="index.html">&larr;</a></span> Methods Arrays
+        </h1>
+      </header>
+      <section>
+        <ul class="array-emojis"></ul>
+      </section>
     </main>
 
     <script>
+      // Variables
+      const arrayEmojis = document.querySelector("ul.array-emojis");
+      var emojis = ["🐻", "🦁", "🦊", "🐸", "🐶"];
 
+      // valueOf
+      arrayEmojis.innerHTML = "<li> Values: " + emojis.valueOf() + "</li>";
+      // toString
+      arrayEmojis.innerHTML += "<li> String: " + emojis.toString() + "</li>";
+      // join
+      arrayEmojis.innerHTML += "<li> Join: " + emojis.join("↔️") + "</li>";
+      // sort
+      arrayEmojis.innerHTML += "<li> Sort: " + emojis.sort() + "</li>";
+      // reverse
+      arrayEmojis.innerHTML += "<li> Reverse: " + emojis.reverse() + "</li>";
+
+      // pop -> delete last one
+      emojis.pop();
+      arrayEmojis.innerHTML += "<li> Pop: " + emojis.valueOf() + "</li>";
+      // shift -> delete first one
+      emojis.shift();
+      arrayEmojis.innerHTML += "<li> Shift: " + emojis.valueOf() + "</li>";
+      // push -> add last one
+      emojis.push("🦄");
+      arrayEmojis.innerHTML += "<li> Push: " + emojis.valueOf() + "</li>";
+      // push -> add first one
+      emojis.unshift("🐝");
+      arrayEmojis.innerHTML += "<li> Unshift: " + emojis.valueOf() + "</li>";
+      let animals = emojis.slice(1, 4);
+      arrayEmojis.innerHTML += "<li> Slice: " + animals.valueOf() + "</li>";
     </script>
-    
-</body>
+  </body>
 </html>
