@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Install jQuery</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        section.game {
+            display: flex;
+        }
+        
+        .memory-game {
+            margin: auto;
+            width: 640px;
+            height: 640px;
+            display: flex;
+            flex-wrap: wrap;
+            perspective: 1000px;
+        }
+
+        .memory-card {
+            width: calc(25% - 10px);
+            height: calc(33.3333% - 10px);
+            position: relative;
+            margin: 5px;
+            transform: scale(1);
+            transform-style: preserve-3d;
+            transition: transform .5s;
+        }
+
+        .memory-card:active {
+            transform: scale(.97);
+            transition: transform .2s ;
+        }
+
+        .memory-card.flip {
+            transform: rotateY(180deg);
+        }
+
+        .front-face,
+        .back-face {
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            border-radius: 5px;
+            background: #1c7ccc;
+            position: absolute;
+            backface-visibility: hidden;
+        }
+
+        .front-face {
+            transform: rotateY(180deg);
+        }
+
+        .btnReset {
+            width: 200px;
+            height: 80px;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px 400px;
+            background-color: #1c7ccc;
+            font-size: 26px;
+            font-weight: normal;
+            color: #fff;
+            border: none;
+            transform: scale(1);
+        }
+
+        .btnReset:active {
+            transform: scale(.97);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1> <span><a href="index.html">&larr;</a></span> Challenge Memory Card</h1>
+        </header>
+        <section>
+            
+            <section class="game">
+                <div class="memory-game">
+                    <div class="memory-card" data-framework="aurelia">
+                        <img class="front-face" src="images/challengeMemory/aurelia.svg" alt="Aurelia" />
+                        <img class="back-face" src="images/challengeMemory/js-badge.svg" alt="JS Badge" />
+                    </div>
+                    <div class="memory-card" data-framework="aurelia">
+                        <img class="front-face" src="images/challengeMemory/aurelia.svg" alt="Aurelia" />
+                        <img class="back-face" src="images/challengeMemory/js-badge.svg" alt="JS Badge" />
+                    </div>
+
+                    <div class="memory-card" data-framework="vue">
+                        <img class="front-face" src="images/challengeMemory/vue.svg" alt="Vue" />
+                        <img class="back-face" src="images/challengeMemory/js-badge.svg" alt="JS Badge" />
+                    </div>
+                    <div class="memory-card" data-framework="vue">
+                        <img class="front-face" src="images/challengeMemory/vue.svg" alt="Vue" />
+                        <img class="back-face" src="images/challengeMemory/js-badge.svg" alt="JS Badge" />
+                    </div>
+
+                    <div class="memory-card" data-framework="angular">
+                        <img class="front-face" src="images/challengeMemory/angular.svg" alt="Angular" />
+                        <img class="back-face" src="images/challengeMemory/js-badge.svg" alt="JS Badge" />
+                    </div>
+                    <div class="memory-card" data-framework="angular">
+                        <img class="front-face" src="images/challengeMemory/angular.svg" alt="Angular" />
+                        <img class="back-face" src="images/challengeMemory/js-badge.svg" alt="JS Badge" />
+                    </div>
+
+                    <div class="memory-card" data-framework="ember">
+                        <img class="front-face" src="images/challengeMemory/ember.svg" alt="Ember" />
+                        <img class="back-face" src="images/challengeMemory/js-badge.svg" alt="JS Badge" />
+                    </div>
+                    <div class="memory-card" data-framework="ember">
+                        <img class="front-face" src="images/challengeMemory/ember.svg" alt="Ember" />
+                        <img class="back-face" src="images/challengeMemory/js-badge.svg" alt="JS Badge" />
+                    </div>
+
+                    <div class="memory-card" data-framework="backbone">
+                        <img class="front-face" src="images/challengeMemory/backbone.svg" alt="Backbone" />
+                        <img class="back-face" src="images/challengeMemory/js-badge.svg" alt="JS Badge" />
+                    </div>
+                    <div class="memory-card" data-framework="backbone">
+                        <img class="front-face" src="images/challengeMemory/backbone.svg" alt="Backbone" />
+                        <img class="back-face" src="images/challengeMemory/js-badge.svg" alt="JS Badge" />
+                    </div>
+
+                    <div class="memory-card" data-framework="react">
+                        <img class="front-face" src="images/challengeMemory/react.svg" alt="React" />
+                        <img class="back-face" src="images/challengeMemory/js-badge.svg" alt="JS Badge" />
+                    </div>
+                    <div class="memory-card" data-framework="react">
+                        <img class="front-face" src="images/challengeMemory/react.svg" alt="React" />
+                        <img class="back-face" src="images/challengeMemory/js-badge.svg" alt="JS Badge" />
+                    </div>
+                </div>
+            </section>
+            <button class="btnReset">Reset</button>
+        </section>
+    </main>
+
+    <!-- Local -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function() {
+            $cards = document.querySelectorAll('.memory-card');
+            $resetGame = document.querySelector('.btnReset');
+
+
+            $firstCard = 0, $secondCard = 0;
+
+            $hasFlippedCard = false;
+            $lockBoard = false;
+
+            function flipCard() {
+                if ($lockBoard) return;
+                if (this === $firstCard) return;
+
+                this.classList.toggle('flip');
+
+                if (!$hasFlippedCard) {
+                    // first click
+                    $hasFlippedCard = true;
+                    $firstCard = this;
+
+                    return;
+                } 
+
+                $secondCard = this;
+
+                checkForMatch();
+                
+            }
+
+            function checkForMatch() {
+                // Do Cards match?
+                $isMatch = $firstCard.dataset.framework === $secondCard.dataset.framework;
+                
+                $isMatch ? disableCards() : unFlipCards();
+            }
+
+            function disableCards() {
+                $firstCard.removeEventListener('click', flipCard);
+                $secondCard.removeEventListener('click', flipCard);
+
+                resetBoard();
+            }
+
+            function unFlipCards() {
+                $lockBoard = true;
+
+                setTimeout(() => {
+                    $firstCard.classList.remove('flip');
+                    $secondCard.classList.remove('flip');
+
+                    resetBoard();
+                }, 1000);
+            }
+
+            function resetBoard() {
+                [$hasFlippedCard, $lockBoard] = [false, false];
+                [$firstCard, $secondCard] = [null, null];
+            }
+
+            (function shuffle() {
+                $cards.forEach(card => {
+                    $randomPos = Math.floor(Math.random() * 12);
+                    card.style.order = $randomPos;
+                });
+            })();
+
+            function resetGame() {
+                window.location.replace('12-challenge-memory-game.html');
+            }
+
+            $resetGame.addEventListener('click', resetGame);
+            $cards.forEach(card => card.addEventListener('click', flipCard));
+        });
+    </script>
+    
+</body>
+</html>
