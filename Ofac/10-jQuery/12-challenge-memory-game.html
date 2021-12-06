@@ -221,7 +221,9 @@
                 window.location.replace('12-challenge-memory-game.html');
             }
 
-            $resetGame.addEventListener('click', resetGame);
+            $('.btnReset').click(function(event) {
+                resetGame();
+            });
             $cards.forEach(card => card.addEventListener('click', flipCard));
         });
     </script>
