@@ -16,6 +16,18 @@ nav {
     font-weight: 700;
 }
 
+.scrolled {
+    background: #c6c6c6;
+    transition: ease-in .2s;
+    color: white;
+}
+
+
+.nav-item:hover {
+    color: #fff;
+    border-bottom: 1px solid;
+}
+
 h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
@@ -66,3 +78,20 @@ img {
 .Service {
     font-size: 20px;
 }
+
+#icons {
+    padding: 15px;
+    height: 100%;
+    color: #fff;
+    text-align: left;
+    background: #00A78E;
+    border-radius: 20px 20px 0 20px;
+    /* margin: 0 45px */
+    font-size: 40px;
+}
+
+ #icons:hover {
+     background-color: #fff;
+     color: #000;
+     cursor: pointer;
+ }
