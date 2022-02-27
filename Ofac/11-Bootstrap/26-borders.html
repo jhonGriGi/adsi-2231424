@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>26 - Borders</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <style>
+        .size {
+            background-color: #eee;
+            border-color: #999 !important;
+            border-width: 2px !important;
+            height: 8rem;
+            width: 8rem;
+            display: inline-block;
+        }
+        
+        .size2 {
+            background-color: #eee;
+            border-width: 2px !important;
+            height: 8rem;
+            width: 8rem;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="row">
+            <div class="col-md-12 mt-5 mb-5">
+                <h1 class="text-center">26 - Borders</h1>
+                <hr>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="index.html">
+                                <i class="fa fa-home"></i>
+                                Main Menu
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            <i class="fa fa-file-code"></i>
+                            26 - Borders
+                        </li>
+                    </ol>
+                </nav>
+
+                <div class="row">
+                    <div class="col-md-8 offset-2">
+                        <!-- Borders -->
+                        <h3 class="text-muted mt-5">Borders</h3>
+                        <span class="w-25 h-25 border mx-3 size"></span>
+                        <span class="w-25 h-25 border-top mx-3 size"></span>
+                        <span class="w-25 h-25 border-end mx-3 size"></span>
+                        <span class="w-25 h-25 border-bottom mx-3 size"></span>
+                        <span class="w-25 h-25 border-start mx-3 size"></span>
+
+                        <!-- Subtractive -->
+                        <h3 class="text-muted mt-5">Subtractive</h3>
+                        <span class="size  border-0"></span>
+                        <span class="size  border-top-0"></span>
+                        <span class="size  border-end-0"></span>
+                        <span class="size  border-bottom-0"></span>
+                        <span class="size  border-start-0"></span>
+
+                        <!-- Border colors -->
+                        <h3 class="text-muted mt-5">Border colors</h3>
+                        <span class="size2 border border-primary"></span>
+                        <span class="size2 border border-secondary"></span>
+                        <span class="size2 border border-success"></span>
+                        <span class="size2 border border-danger"></span>
+                        <span class="size2 border border-warning"></span>
+                        <span class="size2 border border-info"></span>
+                        <span class="size2 border border-light"></span>
+                        <span class="size2 border border-dark"></span>
+                        <span class="size2 border border-white"></span>
+
+                        <!-- Border Radius -->
+                        <h3 class="text-muted mt-5">Border Radius</h3>
+                        <img src="http://via.placeholder.com/200x150" class="mt-2 size rounded">
+                        <img src="http://via.placeholder.com/200x150" class="mt-2 size rounded-top">
+                        <img src="http://via.placeholder.com/200x150" class="mt-2 size rounded-end">
+                        <img src="http://via.placeholder.com/200x150" class="mt-2 size rounded-bottom">
+                        <img src="http://via.placeholder.com/200x150" class="mt-2 size rounded-start">
+                        <img src="http://via.placeholder.com/200x150" class="mt-2 size rounded-circle">
+                        <img src="http://via.placeholder.com/200x150" class="mt-2 size rounded-pill">
+
+                        <!-- Border size -->
+                        <h3 class="text-muted mt-5">Border size</h3>
+                        <img src="http://via.placeholder.com/200x150" class="size rounded-0">
+                        <img src="http://via.placeholder.com/200x150" class="size rounded-1">
+                        <img src="http://via.placeholder.com/200x150" class="size rounded-2">
+                        <img src="http://via.placeholder.com/200x150" class="size rounded-3">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </main>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+strong {
+  color: #00a78e;
+  font-weight: 700;
+}
+
+.open-sans {
+  font-family: "Open Sans", sans-serif;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+nav {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+
+.scrolled {
+  background: ccc !important;
+  transition: ease-in 0.2s;
+  color: white;
+  transition: all 0.5s ease;
+}
+
+.hover_border:hover {
+  border-bottom: 2px solid black;
+}
+
+div.scrolled nav div div ul li a {
+  color: black;
+  opacity: 1;
+}
+
+.nav-item:hover {
+  color: #fff;
+  border-bottom: 1px solid;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+}
+
+button {
+  outline: none;
+  border: none;
+  background: #00a78e;
+  padding: 10px;
+  width: 150px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+
+img {
+  width: 70%;
+  height: auto;
+  display: inline-block;
+}
+
+.line-height {
+  line-height: 30px;
+}
+
+.background {
+  background: url("../img/background.jpg") no-repeat;
+  width: 100%;
+  height: auto;
+}
+
+.relative {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.progress-bar {
+  height: 10px;
+}
+
+.Service {
+  font-size: 20px;
+}
+
+#icons {
+  padding: 15px;
+  height: 100%;
+  color: #fff;
+  text-align: left;
+  background: #00a78e;
+  border-radius: 20px 20px 0 20px;
+  /* margin: 0 45px */
+  font-size: 40px;
+}
+
+#icons:hover {
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
+.click_hover:hover {
+  cursor: pointer;
+}
+
+.scale_card:active {
+  transform: scale(0.9);
+}

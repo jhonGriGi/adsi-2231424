@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>22 - Scrollspy</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <style>
+        .scroll-example {
+            position: relative;
+            height: 11rem;
+            overflow-y: scroll;
+            border: 2px solid #ccc;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="row">
+            <div class="col-md-12 mt-5 mb-5">
+                <h1 class="text-center">22 - Scrollspy</h1>
+                <hr>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="index.html">
+                                <i class="fa fa-home"></i>
+                                Main Menu
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">
+                            <i class="fa fa-file-code"></i>
+                            22 - Scrollspy
+                        </li>
+                    </ol>
+                </nav>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <!--  -->
+                        <h3 class="text-muted mt-5">Scrollspy</h3>
+                        <div class="row">
+                            <div class="col-4">
+                              <div id="list-example" class="list-group">
+                                <a class="list-group-item list-group-item-action" href="#list-item-1">Item 1</a>
+                                <a class="list-group-item list-group-item-action" href="#list-item-2">Item 2</a>
+                                <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+                                <a class="list-group-item list-group-item-action active" href="#list-item-4">Item 4</a>
+                              </div>
+                            </div>
+                            <div class="col-8 ">
+                              <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example scroll-example" tabindex="0">
+                                <h4 id="list-item-1">Item 1</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi unde laboriosam ex nesciunt error possimus adipisci vero, temporibus incidunt ullam repudiandae aspernatur perspiciatis illo, tempore ut ea labore. Repudiandae iste aperiam excepturi similique cupiditate ipsum perferendis dolorem! Recusandae eius totam exercitationem quod repudiandae repellat maiores alias quas ipsa, excepturi aliquam minus. Quas nihil accusantium alias voluptates autem quo perspiciatis temporibus dolore! Ex commodi corporis enim consectetur rem harum veritatis sed laboriosam, neque omnis esse saepe dolor? Quibusdam doloremque ducimus nemo sunt natus vitae necessitatibus quia molestias tenetur iste? Vel non ad iste placeat tempora recusandae maxime commodi possimus voluptatibus cumque quod, assumenda in cupiditate dolor ea ex voluptatum quibusdam consectetur eius modi eligendi. Voluptatibus nesciunt deleniti voluptatum sed placeat voluptas possimus explicabo illum excepturi libero, totam a aliquid quos corporis consequuntur sit eligendi iure numquam enim expedita labore iste. Quibusdam, quisquam id temporibus laborum obcaecati repudiandae deserunt consequatur eos numquam amet fugiat cumque hic quia quo? Ad, culpa id quaerat veritatis consequatur inventore ducimus dolorum hic. Hic dicta, eveniet, inventore, ex maiores voluptas voluptatibus ea animi excepturi maxime obcaecati architecto dolor nisi officia dolorum eius? Aut quod sit commodi. Beatae ipsa voluptatem aut labore, fuga reprehenderit vel dignissimos unde distinctio.</p>
+                                <h4 id="list-item-2">Item 2</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi unde laboriosam ex nesciunt error possimus adipisci vero, temporibus incidunt ullam repudiandae aspernatur perspiciatis illo, tempore ut ea labore. Repudiandae iste aperiam excepturi similique cupiditate ipsum perferendis dolorem! Recusandae eius totam exercitationem quod repudiandae repellat maiores alias quas ipsa, excepturi aliquam minus. Quas nihil accusantium alias voluptates autem quo perspiciatis temporibus dolore! Ex commodi corporis enim consectetur rem harum veritatis sed laboriosam, neque omnis esse saepe dolor? Quibusdam doloremque ducimus nemo sunt natus vitae necessitatibus quia molestias tenetur iste? Vel non ad iste placeat tempora recusandae maxime commodi possimus voluptatibus cumque quod, assumenda in cupiditate dolor ea ex voluptatum quibusdam consectetur eius modi eligendi. Voluptatibus nesciunt deleniti voluptatum sed placeat voluptas possimus explicabo illum excepturi libero, totam a aliquid quos corporis consequuntur sit eligendi iure numquam enim expedita labore iste. Quibusdam, quisquam id temporibus laborum obcaecati repudiandae deserunt consequatur eos numquam amet fugiat cumque hic quia quo? Ad, culpa id quaerat veritatis consequatur inventore ducimus dolorum hic. Hic dicta, eveniet, inventore, ex maiores voluptas voluptatibus ea animi excepturi maxime obcaecati architecto dolor nisi officia dolorum eius? Aut quod sit commodi. Beatae ipsa voluptatem aut labore, fuga reprehenderit vel dignissimos unde distinctio.</p>
+                                <h4 id="list-item-3">Item 3</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi unde laboriosam ex nesciunt error possimus adipisci vero, temporibus incidunt ullam repudiandae aspernatur perspiciatis illo, tempore ut ea labore. Repudiandae iste aperiam excepturi similique cupiditate ipsum perferendis dolorem! Recusandae eius totam exercitationem quod repudiandae repellat maiores alias quas ipsa, excepturi aliquam minus. Quas nihil accusantium alias voluptates autem quo perspiciatis temporibus dolore! Ex commodi corporis enim consectetur rem harum veritatis sed laboriosam, neque omnis esse saepe dolor? Quibusdam doloremque ducimus nemo sunt natus vitae necessitatibus quia molestias tenetur iste? Vel non ad iste placeat tempora recusandae maxime commodi possimus voluptatibus cumque quod, assumenda in cupiditate dolor ea ex voluptatum quibusdam consectetur eius modi eligendi. Voluptatibus nesciunt deleniti voluptatum sed placeat voluptas possimus explicabo illum excepturi libero, totam a aliquid quos corporis consequuntur sit eligendi iure numquam enim expedita labore iste. Quibusdam, quisquam id temporibus laborum obcaecati repudiandae deserunt consequatur eos numquam amet fugiat cumque hic quia quo? Ad, culpa id quaerat veritatis consequatur inventore ducimus dolorum hic. Hic dicta, eveniet, inventore, ex maiores voluptas voluptatibus ea animi excepturi maxime obcaecati architecto dolor nisi officia dolorum eius? Aut quod sit commodi. Beatae ipsa voluptatem aut labore, fuga reprehenderit vel dignissimos unde distinctio.</p>
+                                <h4 id="list-item-4">Item 4</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi unde laboriosam ex nesciunt error possimus adipisci vero, temporibus incidunt ullam repudiandae aspernatur perspiciatis illo, tempore ut ea labore. Repudiandae iste aperiam excepturi similique cupiditate ipsum perferendis dolorem! Recusandae eius totam exercitationem quod repudiandae repellat maiores alias quas ipsa, excepturi aliquam minus. Quas nihil accusantium alias voluptates autem quo perspiciatis temporibus dolore! Ex commodi corporis enim consectetur rem harum veritatis sed laboriosam, neque omnis esse saepe dolor? Quibusdam doloremque ducimus nemo sunt natus vitae necessitatibus quia molestias tenetur iste? Vel non ad iste placeat tempora recusandae maxime commodi possimus voluptatibus cumque quod, assumenda in cupiditate dolor ea ex voluptatum quibusdam consectetur eius modi eligendi. Voluptatibus nesciunt deleniti voluptatum sed placeat voluptas possimus explicabo illum excepturi libero, totam a aliquid quos corporis consequuntur sit eligendi iure numquam enim expedita labore iste. Quibusdam, quisquam id temporibus laborum obcaecati repudiandae deserunt consequatur eos numquam amet fugiat cumque hic quia quo? Ad, culpa id quaerat veritatis consequatur inventore ducimus dolorum hic. Hic dicta, eveniet, inventore, ex maiores voluptas voluptatibus ea animi excepturi maxime obcaecati architecto dolor nisi officia dolorum eius? Aut quod sit commodi. Beatae ipsa voluptatem aut labore, fuga reprehenderit vel dignissimos unde distinctio.</p>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
