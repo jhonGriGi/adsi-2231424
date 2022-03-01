@@ -16,5 +16,5 @@
 - **08** [JavaScript](Ofac/08-JavaScript/)
 - **09** [Figma](Ofac/09-Figma/)
 - **10** [JQuery](Ofac/10-jQuery/)
-- **11** [Bootstrap](Ofac/10-Bootstrap/)
-- **12** [Tailwind](Ofac/11-Tailwind/)
+- **11** [Bootstrap](Ofac/11-Bootstrap/)
+- **12** [Tailwind](Ofac/12-Tailwind/)
