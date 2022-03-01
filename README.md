@@ -14,3 +14,7 @@
 - **06** [PUG](Ofac/06-pug/)
 - **07** [SASS](Ofac/07-sass/)
 - **08** [JavaScript](Ofac/08-JavaScript/)
+- **09** [Figma](Ofac/09-Figma/)
+- **10** [JQuery](Ofac/10-jQuery/)
+- **11** [Bootstrap](Ofac/10-Bootstrap/)
+- **12** [Tailwind](Ofac/11-Tailwind/)
