@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <script src="js/tailwind-3.js"></script>
+    <link rel="stylesheet" href="css/imports.css">
+    <style> 
+        
+    </style>
+</head>
+<body class="bg-gradient-to-r from-green-400 to-blue-500 ">
+    <main >
+        <header class="flex flex-row justify-center space-x-4 bg-white bg-opacity-30 p-10 shadow-xl text-5xl text-center text-indigo-700 font-bold">
+            <a href="index.html" class="hover:scale-110">🐱‍👤</a>
+            <h1>Overflow</h1>
+        </header>
+        <section class="bg-white bg-opacity-30 rounded-lg mt-4 mx-auto w-10/12 p-14">
+            <h2 class="text-2xl
+                       border-b-2
+                       opacity-80
+                       pb-4
+                       mb-10">Overflow visible:</h2>
+            <div class="relative rounded-xl overflow-auto p-8">
+                <div class="overflow-visible relative max-w-sm mx-auto bg-white shadow-lg ring-1 ring-black/5 rounded-xl flex items-center gap-6 dark:bg-slate-800 dark:highlight-white/5">
+                  <img class="absolute -left-6 w-24 h-24 rounded-full shadow-lg" src="http://placekitten.com/400/400">
+                  <div class="flex flex-col py-5 pl-24">
+                    <strong class="text-slate-900 text-sm font-medium dark:text-slate-200">Gaston Hamilton</strong>
+                    <span class="text-slate-500 text-sm font-medium dark:text-slate-400">Locale Cat</span>
+                  </div>
+                </div>
+              </div>
+              <h2 class="text-2xl
+                       border-b-2
+                       opacity-80
+                       pb-4
+                       mb-10">Overflow hidden:</h2>
+            <div class="relative rounded-xl overflow-auto p-8">
+                <div class="overflow-hidden relative max-w-sm mx-auto bg-white shadow-lg ring-1 ring-black/5 rounded-xl flex items-center gap-6 dark:bg-slate-800 dark:highlight-white/5">
+                  <img class="absolute -left-6 w-24 h-24 rounded-full shadow-lg" src="http://placekitten.com/400/400">
+                  <div class="flex flex-col py-5 pl-24">
+                    <strong class="text-slate-900 text-sm font-medium dark:text-slate-200">Gaston Hamilton</strong>
+                    <span class="text-slate-500 text-sm font-medium dark:text-slate-400">Locale Cat</span>
+                  </div>
+                </div>
+              </div>
+            <h2 class="text-2xl
+                    border-b-2
+                    opacity-80
+                    pb-4
+                    mb-10">Overflow Y auto:</h2>
+            <div class="relative rounded-xl overflow-auto p-8">
+                <div class="overflow-y-auto h-72 relative max-w-sm mx-auto bg-white dark:bg-slate-800 dark:highlight-white/5 shadow-lg ring-1 ring-black/5 rounded-xl flex flex-col divide-y dark:divide-slate-200/5">
+                    <div class="flex items-center gap-4 p-4">
+                        <img class="w-12 h-12 rounded-full" src="http://placekitten.com/401/400">
+                        <div class="flex flex-col">
+                            <strong class="text-slate-900 text-sm font-medium dark:text-slate-200">Andrew Garfield</strong>
+                            <span class="text-slate-500 text-sm font-medium dark:text-slate-400">Technical advisor</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 p-4">
+                        <img class="w-12 h-12 rounded-full" src="http://placekitten.com/402/400">
+                        <div class="flex flex-col">
+                            <strong class="text-slate-900 text-sm font-medium dark:text-slate-200">Nermal Houston</strong>
+                            <span class="text-slate-500 text-sm font-medium dark:text-slate-400">Analyst</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 p-4">
+                        <img class="w-12 h-12 rounded-full" src="http://placekitten.com/403/400">
+                        <div class="flex flex-col">
+                            <strong class="text-slate-900 text-sm font-medium dark:text-slate-200">Odie White</strong>
+                            <span class="text-slate-500 text-sm font-medium dark:text-slate-400">Director, Marketing</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 p-4">
+                        <img class="w-12 h-12 rounded-full" src="http://placekitten.com/404/400">
+                        <div class="flex flex-col">
+                            <strong class="text-slate-900 text-sm font-medium dark:text-slate-200">Jon Bonachón</strong>
+                            <span class="text-slate-500 text-sm font-medium dark:text-slate-400">Technical Advisor</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

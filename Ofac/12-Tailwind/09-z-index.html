@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Index</title>
+    <script src="js/tailwind-3.js"></script>
+    <link rel="stylesheet" href="css/imports.css">
+    <style> 
+        
+    </style>
+</head>
+<body class="bg-gradient-to-r from-green-400 to-blue-500 ">
+    <main >
+        <header class="flex flex-row justify-center space-x-4 bg-white bg-opacity-30 p-10 shadow-xl text-5xl text-center text-indigo-700 font-bold">
+            <a href="index.html" class="hover:scale-110">🐱‍👤</a>
+            <h1>Z-Index</h1>
+        </header>
+        <section class="bg-white bg-opacity-30 rounded-lg mt-4 mx-auto w-10/12 p-14">
+            <h2 class="text-2xl
+                       border-b-2
+                       opacity-80
+                       pb-4
+                       mb-10">Z-index:</h2>
+            <div class="relative rounded-xl overflow-auto p-8">
+                <div class="flex justify-center -space-x-3 font-mono text-white text-sm font-bold leading-6">
+                    <div class="w-16 h-16 rounded-full flex items-center justify-center bg-pink-500 shadow-lg ring-2 ring-white z-20 dark:ring-slate-900">05</div>
+                    <div class="w-16 h-16 rounded-full flex items-center justify-center bg-pink-700 shadow-lg ring-2 ring-white z-30 dark:ring-slate-900">04</div>
+                    <div class="w-16 h-16 rounded-full flex items-center justify-center bg-pink-500 shadow-lg ring-2 ring-white z-20 dark:ring-slate-900">03</div>
+                    <div class="w-16 h-16 rounded-full flex items-center justify-center bg-pink-700 shadow-lg ring-2 ring-white z-30 dark:ring-slate-900">02</div>
+                    <div class="w-16 h-16 rounded-full flex items-center justify-center bg-pink-500 shadow-lg ring-2 ring-white z-0 dark:ring-slate-900">01</div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
