@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effects</title>
+    <script src="js/tailwind-3.js"></script>
+    <link rel="stylesheet" href="css/imports.css">
+    <style> 
+        
+    </style>
+</head>
+<body class="bg-gradient-to-r from-green-400 to-blue-500 ">
+    <main >
+        <header class="flex flex-row justify-center space-x-4 bg-white bg-opacity-30 p-10 shadow-xl text-5xl text-center text-indigo-700 font-bold">
+            <a href="index.html" class="hover:scale-110">🐱‍👤</a>
+            <h1>Effects</h1>
+        </header>
+        <section class="bg-white bg-opacity-30 rounded-lg mt-4 mx-auto w-10/12 p-14">
+            <h2 class="text-2xl border-b-2 pb-4 opacity-80 mb-5">Box Shadow</h2>
+         <div class="relative rounded-xl overflow-auto">
+            <div class="flex sm:block overflow-scroll sm:overflow-visible scroll-p-8 bg-white">
+               <div class="flex items-center justify-around gap-12 font-mono font-bold shrink-0 p-8">
+                  <div class="flex flex-col items-center shrink-0">
+                     <p class="font-medium text-sm text-indigo-800 font-mono text-center mb-3">shadow-md</p>
+                     <div class="w-24 h-24 rounded-lg bg-white shadow-md"></div>
+                  </div>
+                  <div class="flex flex-col items-center shrink-0">
+                     <p class="font-medium text-sm text-indigo-800 font-mono text-center mb-3">shadow-lg</p>
+                     <div class="w-24 h-24 rounded-lg bg-white shadow-lg"></div>
+                  </div>
+                  <div class="flex flex-col items-center shrink-0">
+                     <p class="font-medium text-sm text-indigo-800 font-mono text-center mb-3">shadow-xl</p>
+                     <div class="w-24 h-24 rounded-lg bg-white shadow-xl"></div>
+                  </div>
+                  <div class="flex flex-col items-center shrink-0">
+                     <p class="font-medium text-sm text-indigo-800 font-mono text-center mb-3">shadow-2xl</p>
+                     <div class="w-24 h-24 rounded-lg bg-white shadow-2xl"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!--  -->
+         <h2 class="text-2xl border-b-2 pb-4 opacity-80 mb-5 mt-10">>Opacity</h2>
+         <div class="relative rounded-xl overflow-auto p-8">
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-8 sm:gap-16 text-white text-sm font-bold leading-6">
+               <div class="flex flex-col items-center shrink-0">
+                  <p class="font-medium text-sm text-indigo-200 font-mono text-center mb-3">opacity-100</p>
+                  <button class="px-4 py-2 font-semibold text-sm bg-blue-500 text-white rounded-md shadow-sm opacity-100">Button A</button>
+               </div>
+               <div class="flex flex-col items-center shrink-0">
+                  <p class="font-medium text-sm text-indigo-200 font-mono text-center mb-3">opacity-75</p>
+                  <button class="px-4 py-2 font-semibold text-sm bg-blue-500 text-white rounded-md shadow-sm opacity-75">Button B</button>
+               </div>
+               <div class="flex flex-col items-center shrink-0">
+                  <p class="font-medium text-sm text-indigo-200 font-mono text-center mb-3">opacity-50</p>
+                  <button class="px-4 py-2 font-semibold text-sm bg-blue-500 text-white rounded-md shadow-sm opacity-50">Button C</button>
+               </div>
+               <div class="flex flex-col items-center shrink-0">
+                  <p class="font-medium text-sm text-indigo-200 font-mono text-center mb-3">opacity-25</p>
+                  <button class="px-4 py-2 font-semibold text-sm bg-blue-500 text-white rounded-md shadow-sm opacity-25">Button D</button>
+               </div>
+            </div>
+         </div>
+        </section>
+    </main>
+</body>
+</html>
