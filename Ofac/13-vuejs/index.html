@@ -16,7 +16,7 @@
 
         <h1 class="text-center text-5xl font-semibold bg-gradient-to-l from-[#34495e] to-[#41b883] bg-clip-text text-transparent">{{ title }}</h1>
 
-        <nav class="flex flex-col items-center gap-2 my-6">
+        <nav class="flex flex-col items-center gap-2 my-6 overflow-y-auto h-[386px]">
             <li v-for="link in links" class="list-none h-12 flex items-center w-8/12">
                 <a :href="link.url" class="bg-[#41b883] px-4 py-3 rounded-xl text-white text-left w-full shadow-sm hover:bg-[#35495e] font-light hover:scale-105 transition duration-300">{{ link.text }}</a>
             </li>
@@ -28,14 +28,17 @@
         Vue.createApp({
           data() {
             return {
-              title: 'Vue JS 3',
-              links: [
-                  { url: '01-started.html', text: '01 - Started' },
-                  { url: '02.html', text: '02 - Basic' },
-                  { url: '03.html', text: '03 - Basic' },
-                  { url: '04.html', text: '04 - Basic' },
-                  { url: '05.html', text: '05 - Basic' }
-              ]
+                title: 'Vue JS 3',
+                links: [
+                    { url: '01-rendering.html',       text: '01 - Declarative Rendering' },
+                    { url: '02-attr-binding.html',    text: '02 - Attribute Binding' },
+                    { url: '03-event-listeners.html', text: '03 - Event Listeners' },
+                    { url: '04-form-bindings.html',   text: '04 - Form Bindings' },
+                    { url: '05-conditional-rendering.html',     text: '05 - Conditional Rendering' },
+                    { url: '06-list-rendering.html',  text: '06 - List Rendering' },
+                    { url: '07-computed-properties.html',  text: '07 - computed properties' },
+                    { url: '08-tic-tac-toe.html',  text: '08 - tic tac toe' }
+                ]
             }
           }
         }).mount('#app')

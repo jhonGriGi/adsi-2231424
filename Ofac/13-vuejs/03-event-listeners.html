@@ -15,9 +15,10 @@
         </svg>
 
         <h1 class="text-center text-3xl font-semibold bg-gradient-to-l from-[#34495e] to-[#41b883] bg-clip-text text-transparent mb-6">{{ title }}</h1>
-        <h3 class="text-center text-xl mb-2">{{ name }}</h3>
-        <img :src="image" :title="name" class="mx-auto bg-[#34495e] rounded-full">
-        <h4 class="text-center font-medium mt-2">HP: {{ hp }} <br> Type: {{ types[2] }}</h4>
+        
+        <img v-bind:src="kitten" alt="" class="rounded-xl w-56 flex mx-auto shadow-xl">
+        <button v-on:click="randKitten" :class="statusBtn" class="bg-[#34495e] text-white mx-auto py-2 px-10 flex rounded-full hover:scale-110 transition duration-300 my-10">Random</button>
+        
 
         <a href="index.html" class="text-[#34495e] h-14 w-14 absolute hover:scale-125 bottom-2 left-[164px] transition duration-300">
             <svg xmlns="http://www.w3.org/2000/svg" class="" viewBox="0 0 20 20" fill="currentColor">
@@ -27,18 +28,28 @@
     </main>
     <script src="js/vue3.2.31.js"></script>
     <script>
-        const started = {
+        const event = {
             data() {
                 return {
-                    title: '01 - Started',
-                    name: 'Bulbasaur',
-                    image: 'https://www.serebii.net/pokemongo/pokemon/001.png',
-                    hp: 45,
-                    types: ['Electric', 'Water', 'Grass']
+                    title: '03-event-listeners.html',
+                    kitten: 'http://placekitten.com/400/400'
+                }
+            },
+            methods: {
+                randKitten(){ 
+                    let rand = Math.round(Math.random() * 100) + 300
+                    this.kitten = 'http://placekitten.com/' + rand + '/' + rand;
+                    this.$refs.kimage.classList.toggle('hidden')
+                    this.$refs.loader.classList.toggle('hidden')
+
+                    setTimeout(() => {
+                        this.$refs.kimage.classList.toggle('hidden')
+                        this.$refs.loader.classList.toggle('hidden')
+                    }, 2000)
                 }
             }
         }
-        var mountapp = Vue.createApp(started).mount('#app')
+        var mountapp = Vue.createApp(event).mount('#app');
     </script>
 </body>
 </html>
